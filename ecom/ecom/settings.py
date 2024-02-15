@@ -75,11 +75,11 @@ TEMPLATES = [
                 'django.template.context_processors.request', #Required by allauth
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'products.context_processors.categories', #Added to access categories in all templates
             ],
         },
     },
 ]
-
 
 AUTHENTICATION_BACKENDS = [
     # Needed to login by username in Django admin, regardless of `allauth`
