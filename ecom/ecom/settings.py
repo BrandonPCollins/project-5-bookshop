@@ -44,6 +44,9 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
 
+    'crispy_forms',
+    'crispy_bootstrap4',
+
     'home',
     'products',
     'bag',
@@ -63,6 +66,8 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'ecom.urls'
 
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -77,9 +82,14 @@ TEMPLATES = [
                 'django.template.context_processors.request', #Required by allauth
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media', #Added to access media in all templates
                 'products.context_processors.categories', #Added to access categories in all templates
                 'bag.contexts.bag_contents', #Added to access bag contents in all templates
             ],
+            'builtins': [
+                'crispy_forms.templatetags.crispy_forms_tags', #Added to use crispy forms
+                'crispy_forms.templatetags.crispy_forms_field',
+            ], 
         },
     },
 ]
