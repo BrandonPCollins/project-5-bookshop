@@ -3,6 +3,7 @@ from django.contrib import messages
 from django.db.models import Q
 from django.shortcuts import redirect, reverse
 from django.db.models.functions import Lower
+from django.contrib.auth.decorators import login_required
 
 from .models import Product, Category
 from .forms import ProductForm
