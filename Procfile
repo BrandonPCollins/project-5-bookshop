@@ -1,1 +1,1 @@
-web: gunicorn project-5-bookshop.wsgi:application
+web: gunicorn ecom.wsgi:application
