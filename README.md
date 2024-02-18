@@ -9,7 +9,7 @@
 
 ### Table of Contents
 
-1. [Gamesworld](#gamesworld)
+1. [Brandon's Bookshop](#bookshop)
    - [Key Features](#key-features)
       - [News Aggregation and Sorting](#news-aggregation-and-sorting)
       - [User Profiles and Social Connectivity](#user-profiles-and-social-connectivity)
@@ -35,7 +35,7 @@
    - [Bugs](#bugs)
    - [Credits](#credits)
 
-# Gamesworld
+# Brandon's Bookshop
 
 INTRO HERE
 
@@ -106,6 +106,19 @@ This deployment process ensures a smooth transition from local development to a 
 ### Navbar Customization
 
 ### Post and Comment Functionality
+
+### Newsletters
+
+---
+
+## Custom Models
+In concordance with the marking criteria, Brandon's Bookshop features several custom models completely distinct from those showcased within
+
+### Rating System
+
+### Admin Blogs
+
+### Comment System
 
 ### Newsletters
 
