@@ -4,7 +4,7 @@ from .forms import CommentForm, EditCommentForm, PostForm
 from django.http import HttpResponseForbidden
 
 def post_list(request):
-    posts = Post.objects.all()
+    posts = Post.objects.all().order_by('-pub_date')
     return render(request, 'blog/post_list.html', {'posts': posts})
 
 def post_detail(request, post_id):
