@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /profiles/ 
+Sitemap: https://project-5-books-44675354c311.herokuapp.com/sitemap.xml
