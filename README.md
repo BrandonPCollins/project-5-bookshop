@@ -109,6 +109,13 @@ This deployment process ensures a smooth transition from local development to a 
 
 ### Newsletters
 
+### Favicon
+
+Used Microsoft Bing Image Generator to create a favicon for the site
+
+![favicon](https://github.com/BrandonPCollins/project-5-bookshop/assets/131177569/b978047b-9548-4ece-b52d-6c943867d7fa)
+
+
 ---
 
 ## Custom Models
