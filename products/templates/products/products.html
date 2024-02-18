@@ -64,7 +64,9 @@
                                 </a>
                                 {% endif %}
                                 <div class="card-body pb-0">
-                                    <p class="mb-0">{{ product.name }}</p>
+                                    <p class="mb-0">
+                                        <a href="{% url 'product_detail' product.id %}">{{ product.name }}</a>
+                                    </p>
                                     <p>Average Rating: 
                                         <span class="stars stars-small">
                                         {% for i in product.average_rating|range_filter %}
