@@ -39,8 +39,9 @@
                 <p class="card-text">{{ comment.text }}</p>
                 <p class="card-text"><small class="text-muted">{{ comment.created_date }}</small></p>
     
-                <!-- Delete comment button -->
+                <!-- Delete & Edit comment button -->
                 {% if user.is_authenticated and user == comment.author %}
+                    <a href="{% url 'edit_comment' comment.id %}" class="btn btn-primary btn-sm">Edit</a>
                     <a href="{% url 'delete_comment' comment.id %}" class="btn btn-danger btn-sm">Delete</a>
                 {% endif %}
     
@@ -53,8 +54,9 @@
                                 <p class="card-text">{{ reply.text }}</p>
                                 <p class="card-text"><small class="text-muted">{{ reply.created_date }}</small></p>
     
-                                <!-- Delete reply button -->
+                                <!-- Delete & Edit reply button -->
                                 {% if user.is_authenticated and user == reply.author %}
+                                    <a href="{% url 'edit_comment' reply.id %}" class="btn btn-primary btn-sm">Edit</a>
                                     <a href="{% url 'delete_comment' reply.id %}" class="btn btn-danger btn-sm">Delete</a>
                                 {% endif %}
                             </div>
