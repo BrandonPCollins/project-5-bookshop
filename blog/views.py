@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Post, Comment
-from .forms import CommentForm, EditCommentForm
+from .forms import CommentForm, EditCommentForm, PostForm
 from django.http import HttpResponseForbidden
 
 def post_list(request):
@@ -29,6 +29,22 @@ def post_detail(request, post_id):
 
     return render(request, 'blog/post_detail.html', {'post': post, 'comments': comments, 'new_comment': new_comment, 'comment_form': comment_form})
 
+def create_post(request):
+    if not request.user.is_staff:
+        return HttpResponseForbidden()  # Return a 403 Forbidden response
+
+    if request.method == 'POST':
+        form = PostForm(request.POST, request.FILES)
+        if form.is_valid():
+            new_post = form.save(commit=False)
+            new_post.author = request.user
+            new_post.save()
+            return redirect('post_detail', post_id=new_post.id)
+    else:
+        form = PostForm()
+
+    return render(request, 'blog/create_post.html', {'form': form})
+
 def delete_comment(request, comment_id):
     comment = get_object_or_404(Comment, id=comment_id)
     if request.user == comment.author or request.user.is_staff:
@@ -48,3 +64,4 @@ def edit_comment(request, comment_id):
     else:
         form = EditCommentForm(instance=comment)
     return render(request, 'blog/edit_comment.html', {'form': form})
+
