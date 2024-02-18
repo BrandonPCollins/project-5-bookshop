@@ -120,6 +120,8 @@ In concordance with the marking criteria, Brandon's Bookshop features several cu
 
 ### Comment System
 
+Full CRUD functionality is implemented in the comment system for users. Create/ Read/ Update/ Delete
+
 ### Newsletters
 
 ---
