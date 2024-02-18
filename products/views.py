@@ -51,6 +51,11 @@ def all_products(request):
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
+    
+    for product in products:
+        ratings = Rating.objects.filter(product=product)
+        average_rating = ratings.aggregate(average=Avg('rating'))['average']
+        product.average_rating = round(average_rating) if average_rating else 0
 
     context = {
         'products': products,
@@ -69,13 +74,26 @@ def product_detail(request, product_id):
     average_rating = ratings.aggregate(average=Avg('rating'))['average']
     average_rating_rounded = round(average_rating) if average_rating else 0
 
+    user_rating = 0
+    if request.user.is_authenticated:
+        rating = Rating.objects.filter(user=request.user, product_id=product_id).first()
+        if rating is not None:
+            user_rating = rating.rating
+
+    user_rating = user_rating if user_rating is not None else 0
+
+    star_values = [5, 4, 3, 2, 1]
+    stars = [(star_value, user_rating >= star_value) for star_value in star_values]
+    print(stars)
+
     context = {
         'product': product,
         'average_rating': average_rating,
+        'user_rating': user_rating,
+        'stars': stars,
     }
-    
-    return render(request, 'products/product_detail.html', context)
 
+    return render(request, 'products/product_detail.html', context)
 
 @login_required
 def add_product(request):
@@ -162,3 +180,4 @@ def rate_product(request, product_id):
         return JsonResponse({'message': 'Rating submitted successfully'})
     else:
         return JsonResponse({'error': 'Invalid request'})
+    

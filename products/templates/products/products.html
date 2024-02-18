@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
+{% load range_filter %}
+
 
 {% block page_header %}
     <div class="container header-container">
@@ -63,8 +65,17 @@
                                 {% endif %}
                                 <div class="card-body pb-0">
                                     <p class="mb-0">{{ product.name }}</p>
+                                    <p>Average Rating: 
+                                        <span class="stars stars-small">
+                                        {% for i in product.average_rating|range_filter %}
+                                            ★
+                                        {% endfor %}
+                                        {% for i in 5|subtract:product.average_rating|range_filter %}
+                                            ☆
+                                        {% endfor %}
+                                    </span></p>
                                 </div>
-                                <div class="card-footer bg-white pt-0 border-0 text-left">
+                                                    <div class="card-footer bg-white pt-0 border-0 text-left">
                                     <div class="row">
                                         <div class="col">
                                             <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
