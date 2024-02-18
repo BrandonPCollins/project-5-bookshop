@@ -66,7 +66,8 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
     ratings = Rating.objects.filter(product=product)
-    average_rating = ratings.aggregate(average=Avg('rating'))
+    average_rating = ratings.aggregate(average=Avg('rating'))['average']
+    average_rating_rounded = round(average_rating) if average_rating else 0
 
     context = {
         'product': product,
