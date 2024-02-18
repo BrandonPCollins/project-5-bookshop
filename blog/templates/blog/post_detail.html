@@ -14,6 +14,11 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+                {% if post.image %}
+                    <img style="width: 100%; height: auto; max-width: 600px; object-fit: cover;" src="{{ post.image.url }}" alt="{{ post.title }}">
+                {% else %}
+                    <img style="width: 100%; height: auto; max-width: 600px; object-fit: cover;" src="{% static 'media/placeholder.jpg' %}" alt="Placeholder image">
+                {% endif %}
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="post-details-container mb-5 mt-md-5">
@@ -21,6 +26,32 @@
                     <p class="text-muted">{{ post.pub_date }}</p>
                     <p>{{ post.content }}</p>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <h2>Comments</h2>
+        {% for comment in comments %}
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">{{ comment.author }}</h5>
+                    <p class="card-text">{{ comment.text }}</p>
+                    <p class="card-text"><small class="text-muted">{{ comment.created_date }}</small></p>
+                </div>
+            </div>
+        {% empty %}
+            <p>No comments yet.</p>
+        {% endfor %}
+
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Leave a comment</h5>
+                <form method="post">
+                    {% csrf_token %}
+                    {{ comment_form.as_p }}
+                    <button type="submit" class="btn btn-primary">Submit comment</button>
+                </form>
             </div>
         </div>
     </div>
