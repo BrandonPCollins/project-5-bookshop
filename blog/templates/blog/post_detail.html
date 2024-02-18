@@ -30,6 +30,7 @@
         </div>
     </div>
 
+
     <div class="container mt-5">
         <h2>Comments</h2>
         {% for comment in comments %}
@@ -43,16 +44,21 @@
         {% empty %}
             <p>No comments yet.</p>
         {% endfor %}
-
-        <div class="card mb-3">
-            <div class="card-body">
-                <h5 class="card-title">Leave a comment</h5>
-                <form method="post">
-                    {% csrf_token %}
-                    {{ comment_form.as_p }}
-                    <button type="submit" class="btn btn-primary">Submit comment</button>
-                </form>
+    
+        {% if comment_form %}
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Leave a comment</h5>
+                    <form method="post">
+                        {% csrf_token %}
+                        {{ comment_form.as_p }}
+                        <button type="submit" class="btn btn-primary">Submit comment</button>
+                    </form>
+                </div>
             </div>
-        </div>
+        {% else %}
+            <p>You must be logged in to leave a comment.</p>
+        {% endif %}
     </div>
+    
 {% endblock %}
