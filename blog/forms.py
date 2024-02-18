@@ -9,8 +9,7 @@ class PostForm(forms.ModelForm):
             'image': forms.FileInput(),
         }
     def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.fields['author'].widget.attrs['readonly'] = True
+        super(PostForm, self).__init__(*args, **kwargs)
 
 class CommentForm(forms.ModelForm):
     class Meta:
