@@ -1,12 +1,15 @@
 from django.shortcuts import render, get_object_or_404
 from django.contrib import messages
-from django.db.models import Q
+from django.db.models import Q, Avg
 from django.shortcuts import redirect, reverse
 from django.db.models.functions import Lower
 from django.contrib.auth.decorators import login_required
 
-from .models import Product, Category
+from .models import Product, Category, Rating
 from .forms import ProductForm
+
+from django.http import JsonResponse
+from django.views.decorators.csrf import csrf_exempt
 
 def all_products(request):
     """"A view to show all products, including sorting and search queries"""
@@ -62,9 +65,12 @@ def product_detail(request, product_id):
     """A view to show individual product details"""
 
     product = get_object_or_404(Product, pk=product_id)
+    ratings = Rating.objects.filter(product=product)
+    average_rating = ratings.aggregate(average=Avg('rating'))
 
     context = {
         'product': product,
+        'average_rating': average_rating,
     }
     
     return render(request, 'products/product_detail.html', context)
@@ -140,3 +146,18 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+@csrf_exempt
+def rate_product(request, product_id):
+    if request.method == 'POST':
+        rating_value = request.POST.get('rating')
+        product = get_object_or_404(Product, pk=product_id)
+        user = request.user
+        ratings = Rating.objects.filter(product=product, user=user)
+        if ratings.exists():
+            ratings.update(rating=rating_value)
+        else:
+            Rating.objects.create(product=product, user=user, rating=rating_value)
+        return JsonResponse({'message': 'Rating submitted successfully'})
+    else:
+        return JsonResponse({'error': 'Invalid request'})
