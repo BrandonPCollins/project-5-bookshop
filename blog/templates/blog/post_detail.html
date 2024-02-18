@@ -15,9 +15,9 @@
         <div class="row">
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
                 {% if post.image %}
-                    <img style="width: 100%; height: auto; max-width: 600px; object-fit: cover;" src="{{ post.image.url }}" alt="{{ post.title }}">
+                    <img class="img-fluid rounded mb-4" src="{{ post.image.url }}" alt="{{ post.title }}">
                 {% else %}
-                    <img style="width: 100%; height: auto; max-width: 600px; object-fit: cover;" src="{% static 'media/placeholder.jpg' %}" alt="Placeholder image">
+                    <img class="img-fluid rounded mb-4" src="{% static 'media/placeholder.jpg' %}" alt="Placeholder image">
                 {% endif %}
             </div>
             <div class="col-12 col-md-6 col-lg-4">
@@ -30,21 +30,55 @@
         </div>
     </div>
 
-
     <div class="container mt-5">
-        <h2>Comments</h2>
+        <h2 class="mb-4">Comments</h2>
         {% for comment in comments %}
-            <div class="card mb-3">
-                <div class="card-body">
-                    <h5 class="card-title">{{ comment.author }}</h5>
-                    <p class="card-text">{{ comment.text }}</p>
-                    <p class="card-text"><small class="text-muted">{{ comment.created_date }}</small></p>
-                </div>
-            </div>
-        {% empty %}
-            <p>No comments yet.</p>
-        {% endfor %}
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">{{ comment.author }}</h5>
+                <p class="card-text">{{ comment.text }}</p>
+                <p class="card-text"><small class="text-muted">{{ comment.created_date }}</small></p>
     
+                <!-- Delete comment button -->
+                {% if user.is_authenticated and user == comment.author %}
+                    <a href="{% url 'delete_comment' comment.id %}" class="btn btn-danger btn-sm">Delete</a>
+                {% endif %}
+    
+                <!-- Display replies -->
+                {% for reply in comment.replies.all %}
+                    <div class="ml-5"> <!-- Indent replies -->
+                        <div class="card mt-2">
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2 text-muted">{{ reply.author }}</h6>
+                                <p class="card-text">{{ reply.text }}</p>
+                                <p class="card-text"><small class="text-muted">{{ reply.created_date }}</small></p>
+    
+                                <!-- Delete reply button -->
+                                {% if user.is_authenticated and user == reply.author %}
+                                    <a href="{% url 'delete_comment' reply.id %}" class="btn btn-danger btn-sm">Delete</a>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+    
+                <!-- Reply form -->
+                {% if user.is_authenticated %}
+                    <form method="post" class="ml-5 mt-3">
+                        {% csrf_token %}
+                        <input type="hidden" name="parent" value="{{ comment.id }}">
+                        <textarea name="text" class="form-control mb-2"></textarea>
+                        <button type="submit" class="btn btn-primary btn-sm">Reply</button>
+                    </form>
+                {% else %}
+                    <p class="ml-5">You must be logged in to reply.</p>
+                {% endif %}
+            </div>
+        </div>
+    {% empty %}
+        <p>No comments yet.</p>
+    {% endfor %}
+        
         {% if comment_form %}
             <div class="card mb-3">
                 <div class="card-body">
@@ -60,5 +94,4 @@
             <p>You must be logged in to leave a comment.</p>
         {% endif %}
     </div>
-    
 {% endblock %}

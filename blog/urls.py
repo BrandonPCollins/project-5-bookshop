@@ -1,8 +1,9 @@
 from django.urls import path
-from .views import post_list, post_detail
+from .views import post_list, post_detail, delete_comment
 from . import views
 
 urlpatterns = [
     path('', post_list, name='post_list'),
     path('<int:post_id>/', views.post_detail, name='post_detail'),
+    path('comment/<int:comment_id>/delete/', delete_comment, name='delete_comment'),
     ]
