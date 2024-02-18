@@ -4,7 +4,7 @@ from .models import Post, Comment
 class PostForm(forms.ModelForm):
     class Meta:
         model = Post
-        fields = ('title', 'content', 'author', 'image')
+        fields = ('title', 'content', 'image')
         widgets = {
             'image': forms.FileInput(),
         }
