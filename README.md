@@ -176,9 +176,9 @@ python3 -m http.server
 
 ### Python
 
-https://pep8ci.herokuapp.com/
+Using https://pep8ci.herokuapp.com/ brought to my attention various formatting issues within the code so I used vscode's inbuilt auto-formatter to easily solve the majority of the errors. The ones that remain now are a warning of "missing whitespace around operator" which my auto-formatter was not addressing and doing it manually wouldn't have been worth the time as it has no effect on the functionality of my code.
 
-Whitespace around operators and lines being too long, none of which substantively effect my code's functionality in any way.
+![image](https://github.com/BrandonPCollins/project-5-bookshop/assets/131177569/9321fef5-77d8-47b9-908f-c73cac59ea60)
 
 ### Javascript 
 
