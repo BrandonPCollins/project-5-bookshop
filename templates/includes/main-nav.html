@@ -17,10 +17,10 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5 dropdown-toggle" href="#" id="clothing-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5 dropdown-toggle" href="#" id="categories-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Categories
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
+            <div class="dropdown-menu border-0" aria-labelledby="categories-link">
                 {% for category in categories %}
                 <a href="{% url 'products' %}?category={{ category.name }}" class="dropdown-item">{{ category.friendly_name }}</a>
                 {% endfor %}
@@ -28,19 +28,19 @@
         </li>
 
         <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'newsletter:subscribe_newsletter' %}" id="homeware-link">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'newsletter:subscribe_newsletter' %}" id="newsletter-link">
                 Newsletter
             </a>
         </li>
         
         <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'post_list' %}" id="blog-link">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'post_list' %}" id="blog-posts-link">
                 Blog
             </a>
         </li>
 
         <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link text-black" href="{% url 'about' %}" id="blog-link">
+            <a class="logo-font font-weight-bold nav-link text-black" href="{% url 'about' %}" id="about-link">
                 About & FAQ
             </a>
         </li>
