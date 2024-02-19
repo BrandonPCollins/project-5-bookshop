@@ -37,7 +37,7 @@
 
 # Brandon's Bookshop
 
-INTRO HERE
+An online book retailer blah balh.
 
 ## Key Features
 
@@ -148,6 +148,8 @@ Testing was accomplished manually via continuous and determined experimentation 
 ## Future Features
 
 * Full CRUD Functionality for the sending of Newsletters. Currently, it is performed exclusively through Administration tab but in a future build having the ability to draft, view and send Newsletters integrated into the website, as the functionality to add Products from the page itself, would be a great feature for future superusers and clients.
+
+* The adding of a pdf selection to the products model allowing users to choose between the purchase of physical or pdf versions of their purchases, which will then be sent to their email.
 
 ---
 
