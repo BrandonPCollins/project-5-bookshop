@@ -55,6 +55,9 @@ An online book retailer blah balh.
 
 ## Agile Development Approach
 
+(Kanban Project Board)[https://github.com/users/BrandonPCollins/projects/5]
+
+Issues divided into (milestones)[https://github.com/BrandonPCollins/project-5-bookshop/milestones]
 
 ### Dynamic Adaptability and Continuous Improvement
 
