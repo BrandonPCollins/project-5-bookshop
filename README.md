@@ -47,6 +47,10 @@ An online book retailer blah balh.
 
 ### Content Creation and Management
 
+### Wireframes
+
+
+
 ### Colour Palette  
 
 ## Agile Development Approach
@@ -117,10 +121,6 @@ All products have a boolean value which when enabled add them to the featured bo
 
 To increase the trustworthiness of our site and thus elevate it within the SEO standings I've included a rotating carousel or User Testimonials at the foot of the home/index page. At the moment it's two static reviews written into the page itself, it serves as good practice in gaining user loyalty and SEO optimisation, and a proof of concept that can be expanded upon to include real and dynamically scripted user experience testimonials in the future.
 
-### About Us & FAQ
-
-Also to increase SEO standings by upping the site's trustability, I have an included a page doubling as an 'About Us' and a 'Frequently Asked Questions' directory.
-
 ### Favicon
 
 Used Microsoft Bing Image Generator to create a favicon for the site
@@ -135,11 +135,7 @@ In concordance with the marking criteria, Brandon's Bookshop features several cu
 
 ### Rating System
 
-Users can rate products on the site.
-
 ### Admin Blogs
-
-Admin superusers can create blogs to post on the log page of the site. 
 
 ### Comment System
 
@@ -153,7 +149,31 @@ Full CRUD functionality is implemented in the comment system for users. Create/ 
 
 Testing was accomplished manually via continuous and determined experimentation of functionality on both Desktop and Mobile Phone.
 
+python3 manage.py test name-of-app 
+
+coverage run --source=name-of-app manage.py test
+
+coverage report
+
+coverage html
+
+python3 -m http.server
+
+
+
 ### W3C Validator 
+
+### CSS
+
+https://jigsaw.w3.org/css-validator/
+
+### Python
+
+https://pep8ci.herokuapp.com/
+
+### Javascript 
+
+https://jshint.com/
 
 ### Lighthouse
 
@@ -165,11 +185,9 @@ Testing was accomplished manually via continuous and determined experimentation 
 
 * Full CRUD Functionality for the sending of Newsletters. Currently, it is performed exclusively through Administration tab but in a future build having the ability to draft, view and send Newsletters integrated into the website, as the functionality to add Products from the page itself, would be a great feature for future superusers and clients.
 
-* The addition of a pdf selection to the products model allowing users to choose between the purchase of physical or pdf versions of their purchases, which will then be sent to their email.
+* The adding of a pdf selection to the products model allowing users to choose between the purchase of physical or pdf versions of their purchases, which will then be sent to their email.
 
 * A way for customers to submit testimonials for display on the carousel at the bottom of the index page and thus allowing them to appear dynamically? {% for testimonial in testimonials %}
-
-* User review authentication, to not allow users to review an item unless it is in their order history and the product has been shipped. Feature not implemented as this is a test website at the moment and its more valuable for a user to be able to rate any product to display that the feature is operational.
 
 ---
 
@@ -178,7 +196,6 @@ Testing was accomplished manually via continuous and determined experimentation 
 
 ## Credits
 
-- Code Institute for the provision of the template for the project and the [Boutique Ado](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+EA101+2021_T1/courseware/eb05f06e62c64ac89823cc956fcd8191/3adff2bf4a78469db72c5330b1afa836/) website project, upon which this product is heavily based.
 - Codemy.com's YouTube channel, whose extensive tutorials on Django and Python were instrumental in completing this project. [Codemy.com on YouTube](https://www.youtube.com/@Codemycom) and their [tutorial on building a Django blog](https://www.youtube.com/watch?v=B40bteAMM_M&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi).
 - The creators of [Responsive Viewer](https://chromewebstore.google.com/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb?pli=1)
 - Pexels for the Placeholder images. Google Image Search for the Images used in my test posts.
