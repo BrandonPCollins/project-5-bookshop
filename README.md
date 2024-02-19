@@ -109,6 +109,14 @@ This deployment process ensures a smooth transition from local development to a 
 
 ### Newsletters
 
+### Featured Books 
+
+All products have a boolean value which when enabled add them to the featured books carousel on the site's index page. Scrolling carousel allows users to scroll through the books and allows me to know consistently that it will always appear as a single book on the main page no matter how many are added as "featured". Initially I didn't account for this and when I tested it all the featured books stacked on top of each-other leading to an incredibly bloated and long page, and thus made me adopt the carousel approach to featuring the products.  
+
+### User Testimonials
+
+To increase the trustworthiness of our site and thus elevate it within the SEO standings I've included a rotating carousel or User Testimonials at the foot of the home/index page. At the moment it's two static reviews written into the page itself, it serves as good practice in gaining user loyalty and SEO optimisation, and a proof of concept that can be expanded upon to include real and dynamically scripted user experience testimonials in the future.
+
 ### Favicon
 
 Used Microsoft Bing Image Generator to create a favicon for the site
@@ -150,6 +158,8 @@ Testing was accomplished manually via continuous and determined experimentation 
 * Full CRUD Functionality for the sending of Newsletters. Currently, it is performed exclusively through Administration tab but in a future build having the ability to draft, view and send Newsletters integrated into the website, as the functionality to add Products from the page itself, would be a great feature for future superusers and clients.
 
 * The adding of a pdf selection to the products model allowing users to choose between the purchase of physical or pdf versions of their purchases, which will then be sent to their email.
+
+* A way for customers to submit testimonials for display on the carousel at the bottom of the index page and thus allowing them to appear dynamically? {% for testimonial in testimonials %}
 
 ---
 
