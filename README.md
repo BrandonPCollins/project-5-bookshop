@@ -37,19 +37,38 @@
 
 # Brandon's Bookshop
 
-An online book retailer blah balh.
+An online rare book retailer.
 
 ## Key Features
 
 ### Full E-Commerce Shopping Site
 
-### Post Categorisation 
+### Product Categorisation 
 
-### Content Creation and Management
+### Blog Post Creation and Management
+
+### Navbar Customization
+
+### Post and Comment Functionality
+
+### Newsletters
+
+### Featured Books 
+
+All products have a boolean value which when enabled add them to the featured books carousel on the site's index page. Scrolling carousel allows users to scroll through the books and allows me to know consistently that it will always appear as a single book on the main page no matter how many are added as "featured". Initially I didn't account for this and when I tested it all the featured books stacked on top of each-other leading to an incredibly bloated and long page, and thus made me adopt the carousel approach to featuring the products.  
+
+### User Testimonials
+
+To increase the trustworthiness of our site and thus elevate it within the SEO standings I've included a rotating carousel or User Testimonials at the foot of the home/index page. At the moment it's two static reviews written into the page itself, it serves as good practice in gaining user loyalty and SEO optimisation, and a proof of concept that can be expanded upon to include real and dynamically scripted user experience testimonials in the future.
+
+### Favicon
+
+Used Microsoft Bing Image Generator to create a favicon for the site
+
+![favicon](https://github.com/BrandonPCollins/project-5-bookshop/assets/131177569/b978047b-9548-4ece-b52d-6c943867d7fa)
+
 
 ### Wireframes
-
-
 
 ### Colour Palette  
 
@@ -60,7 +79,6 @@ An online book retailer blah balh.
 Issues divided into [milestones](https://github.com/BrandonPCollins/project-5-bookshop/milestones)
 
 ### Dynamic Adaptability and Continuous Improvement
-
 
 ## Deployment
 
@@ -108,31 +126,6 @@ This deployment process ensures a smooth transition from local development to a 
 
 ---
 
-## Features
-
-### Navbar Customization
-
-### Post and Comment Functionality
-
-### Newsletters
-
-### Featured Books 
-
-All products have a boolean value which when enabled add them to the featured books carousel on the site's index page. Scrolling carousel allows users to scroll through the books and allows me to know consistently that it will always appear as a single book on the main page no matter how many are added as "featured". Initially I didn't account for this and when I tested it all the featured books stacked on top of each-other leading to an incredibly bloated and long page, and thus made me adopt the carousel approach to featuring the products.  
-
-### User Testimonials
-
-To increase the trustworthiness of our site and thus elevate it within the SEO standings I've included a rotating carousel or User Testimonials at the foot of the home/index page. At the moment it's two static reviews written into the page itself, it serves as good practice in gaining user loyalty and SEO optimisation, and a proof of concept that can be expanded upon to include real and dynamically scripted user experience testimonials in the future.
-
-### Favicon
-
-Used Microsoft Bing Image Generator to create a favicon for the site
-
-![favicon](https://github.com/BrandonPCollins/project-5-bookshop/assets/131177569/b978047b-9548-4ece-b52d-6c943867d7fa)
-
-
----
-
 ## Custom Models
 In concordance with the marking criteria, Brandon's Bookshop features several custom models completely distinct from those showcased within
 
@@ -151,17 +144,6 @@ Full CRUD functionality is implemented in the comment system for users. Create/ 
 ## Testing
 
 Testing was accomplished manually via continuous and determined experimentation of functionality on both Desktop and Mobile Phone.
-
-python3 manage.py test name-of-app 
-
-coverage run --source=name-of-app manage.py test
-
-coverage report
-
-coverage html
-
-python3 -m http.server
-
 
 
 ### W3C Validator 
