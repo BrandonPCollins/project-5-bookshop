@@ -168,6 +168,7 @@ python3 -m http.server
 
 ![image](https://github.com/BrandonPCollins/project-5-bookshop/assets/131177569/59c4fa61-11e1-4e9c-82d3-c75ae6fb18a2)
 
+![image](https://github.com/BrandonPCollins/project-5-bookshop/assets/131177569/a104055c-b278-405d-8ed0-fcad2d92a7d9)
 
 ### CSS
 
