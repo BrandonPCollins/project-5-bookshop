@@ -12,16 +12,40 @@
 {% block content %}
     <div class="container h-100">
         <div class="row h-100">
-            <div class="col-7 col-md-4 my-auto">
+            <div class="col-lg-7 col-md-6 my-auto">
                 <h1 class="display-4 logo-font text-white outlined-text centered-text">
                     The Internet's Premium Online <strong>Book Retailer</strong>
                 </h1>
                 <div class="my-5">
                     <h4>
-                        <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Buy Books Now!</a>
+                        <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Explore Our Collection</a>
                     </h4>
                 </div>
             </div>
+            <div class="col-lg-5 col-md-6">
+                <img src="{% static 'images/bookstore.jpg' %}" alt="Bookstore" class="img-fluid">
+            </div>
         </div>
     </div>
+
+    <section class="featured-books-section bg-light">
+        <div class="container">
+            <h2 class="section-title">Featured Books</h2>
+            <div class="row">
+                {% for product in featured_products %}
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.title }}">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ product.title }}</h5>
+                            <p class="card-text">{{ product.description }}</p>
+                            <a href="{% url 'product_detail' product.id %}" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <br><br>
 {% endblock %}
