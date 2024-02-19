@@ -166,17 +166,24 @@ python3 -m http.server
 
 ### W3C Validator 
 
+![image](https://github.com/BrandonPCollins/project-5-bookshop/assets/131177569/59c4fa61-11e1-4e9c-82d3-c75ae6fb18a2)
+
+
 ### CSS
 
-https://jigsaw.w3.org/css-validator/
+![image](https://github.com/BrandonPCollins/project-5-bookshop/assets/131177569/14bee55c-3d2d-42c8-beb3-31c4f267ee65)
 
 ### Python
 
 https://pep8ci.herokuapp.com/
 
+Whitespace around operators and lines being too long, none of which substantively effect my code's functionality in any way.
+
 ### Javascript 
 
 https://jshint.com/
+
+![image](https://github.com/BrandonPCollins/project-5-bookshop/assets/131177569/b450c495-95c1-46e6-8eec-1109358defb9)
 
 ### Lighthouse
 
