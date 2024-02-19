@@ -412,5 +412,11 @@ input[name='q']::placeholder {
 
 .book-carousel-item .card {
     max-width: 300px; 
+    width: 100%; 
     margin: auto;
+}
+
+.card-img-top {
+    max-width: 100%;
+    height: auto; 
 }

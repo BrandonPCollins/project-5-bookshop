@@ -33,7 +33,7 @@
                     {% for product in featured_products %}
                     <div class="carousel-item {% if forloop.first %}active{% endif %} book-carousel-item">
                         <div class="card">
-                            <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.title }}">
+                            <img src="{{ product.image.url }}" class="card-img-top img-fluid" alt="{{ product.title }}">
                             <div class="card-body">
                                 <h5 class="card-title">{{ product.title }}</h5>
                                 <p class="card-text">{{ product.description }}</p>
@@ -43,7 +43,7 @@
                     </div>
                     {% endfor %}
                 </div>
-                <a class="carousel-control-prev" href="#featuredBooksCarousel" role="button" data-slide="prev">
+                    <a class="carousel-control-prev" href="#featuredBooksCarousel" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                 </a>
