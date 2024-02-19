@@ -188,6 +188,11 @@ https://jshint.com/
 
 ### Lighthouse
 
+Changed the body image from a .jpg to a .webp per lighthouse's suggest for superior image compression and thus improve performance.
+
+![image](https://github.com/BrandonPCollins/project-5-bookshop/assets/131177569/c5555629-e3e4-491a-82c1-2c8daf34204b)
+
+
 ### Responsivity
 
 ---
