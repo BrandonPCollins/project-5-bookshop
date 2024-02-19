@@ -14,7 +14,7 @@
         <div class="row h-100">
             <div class="col-lg-7 col-md-6 my-auto">
                 <h1 class="display-4 logo-font text-white outlined-text centered-text">
-                    The Internet's Premium Online <strong>Book Retailer</strong>
+                    The Internet's Premium <strong>Antiquarian Bookstore</strong>
                 </h1>
                 <div class="my-5">
                     <h4>
@@ -28,22 +28,32 @@
     <section class="featured-books-section bg-light">
         <div class="container">
             <h2 class="section-title">Featured Books</h2>
-            <div class="row">
-                {% for product in featured_products %}
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.title }}">
-                        <div class="card-body">
-                            <h5 class="card-title">{{ product.title }}</h5>
-                            <p class="card-text">{{ product.description }}</p>
-                            <a href="{% url 'product_detail' product.id %}" class="btn btn-primary">View Details</a>
+            <div id="featuredBooksCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    {% for product in featured_products %}
+                    <div class="carousel-item {% if forloop.first %}active{% endif %} book-carousel-item">
+                        <div class="card">
+                            <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.title }}">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ product.title }}</h5>
+                                <p class="card-text">{{ product.description }}</p>
+                                <a href="{% url 'product_detail' product.id %}" class="btn btn-primary">View Details</a>
+                            </div>
                         </div>
                     </div>
+                    {% endfor %}
                 </div>
-                {% endfor %}
+                <a class="carousel-control-prev" href="#featuredBooksCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#featuredBooksCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
         </div>
-    </section>
+    </section>    
     <br><br>
     <section class="testimonials-section bg-light py-5">
         <div class="container">

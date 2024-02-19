@@ -409,3 +409,8 @@ input[name='q']::placeholder {
     font-size: 35px;
     color: black;
 }
+
+.book-carousel-item .card {
+    max-width: 300px; 
+    margin: auto;
+}
