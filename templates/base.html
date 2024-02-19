@@ -63,7 +63,7 @@
         <div class="col-12 col-lg-4 my-auto py-lg-0">
           <ul class="list-inline list-unstyled text-center text-lg-right my-0">
             <li class="list-inline-item dropdown">
-                <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="text-black nav-link" href="#" id="user-options-account" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <div class="text-center">
                         <div><i class="fas fa-user fa-lg"></i></div>
                         <p class="my-0">My Account</p>
@@ -106,7 +106,9 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             {% include 'includes/mobile-top-header.html' %}
-            {% include 'includes/main-nav.html' %}
+            <ul class="navbar-nav w-auto mx-auto">
+                {% include 'includes/main-nav.html' %}
+            </ul>
         </nav>
       </div>
       <div id="delivery-banner" class="row text-center">
