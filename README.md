@@ -78,7 +78,6 @@ Brandon's Bookshop features a custom favicon for brand recognition and visual id
 
 ![favicon](https://github.com/BrandonPCollins/project-5-bookshop/assets/131177569/b978047b-9548-4ece-b52d-6c943867d7fa)
 
-
 ### Wireframes
 
 ### Colour Palette  
@@ -93,7 +92,21 @@ Used coolors.co to generate a colour palette for the site. It was important for 
 
 Issues divided into [milestones](https://github.com/BrandonPCollins/project-5-bookshop/milestones)
 
-### Dynamic Adaptability and Continuous Improvement
+
+## Custom Models
+In concordance with the marking criteria, Brandon's Bookshop features several custom models completely distinct from those showcased within
+
+### Rating System
+
+### Admin Blogs
+
+### Comment System
+
+Full CRUD functionality is implemented in the comment system for users. Create/ Read/ Update/ Delete
+
+### Newsletters
+
+---
 
 ## Deployment
 
@@ -120,11 +133,11 @@ This project was initialiased using the [Code Institute Gitpod Full Template](ht
 
 5. **Deployment:**
    -In the ROOT directory create a Procfile containing "web: gunicorn myblog.wsgi"
-   -Run pip3 freeze to get the requirements and copy them into a requirements.txt file.
+   -Run pip3 freeze to get the requirements and copy them into a requirements.txt file in the project's main directory.
 ### Heroku Deployment:
 
 1. **Create Heroku App:**
-   - Create a new Heroku app and link it to the Git repository for the project.
+   - Create a new Heroku app and link it to the Git repository for the project under the Deploy tab. If desired enable automatic deployment.
 
 2. **Heroku Configurations:**
    - Set up Heroku Config Vars to account for necessary variables such as Cloudinary URL, the Database URL and the Secret Key. Also, add DISABLE_COLLECTSTATIC with a value of 1 until final deployment.
@@ -134,25 +147,10 @@ This project was initialiased using the [Code Institute Gitpod Full Template](ht
    - The database used in this project (Elephant SQL) should be configured in Heroku.
 
 4. **Deployment:**
-   - Deploy the project to Heroku by pushing the code to the Heroku remote repository, setting Debug=True to Debug=False before final deployment.
+   - Deploy the project to Heroku by pushing the code to the Heroku remote repository, setting Debug=True to Debug=False in your settings.py before final deployment. Run  heroku run python manage.py migrate to ensure the migrations for the project's models are correctly running on the Heroku app.
    - The project should now be accessible through the provided Heroku app URL.
 
 This deployment process ensures a smooth transition from local development to a live Heroku environment, providing a scalable and accessible platform for users.
-
----
-
-## Custom Models
-In concordance with the marking criteria, Brandon's Bookshop features several custom models completely distinct from those showcased within
-
-### Rating System
-
-### Admin Blogs
-
-### Comment System
-
-Full CRUD functionality is implemented in the comment system for users. Create/ Read/ Update/ Delete
-
-### Newsletters
 
 ---
 
