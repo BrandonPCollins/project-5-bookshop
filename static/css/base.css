@@ -10,6 +10,11 @@ body {
     font-family: 'Lato';
 }
 
+.custom-box {
+    background-color: rgba(65, 60, 88, 1);
+    border-radius: 100px;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -40,7 +45,7 @@ body {
 
 .btn-outline-black {
     background: white;
-    color: black !important; /* use important to override link colors for <a> elements */
+    color: black !important;
     border: 1px solid black;
 }
 
@@ -123,19 +128,17 @@ input[name='q']::placeholder {
     height: 2px;
 }
 
-/* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-left: 4px solid transparent;
-    border-right: 4px solid transparent; 
+    border-right: 4px solid transparent;
     border-bottom: 10px solid black;
     position: absolute;
     top: -10px;
     right: 36px;
 }
 
-/* Convenience classes - colors copied from Bootstrap */
 .arrow-primary {
     border-bottom-color: #007bff !important;
 }
@@ -227,7 +230,7 @@ input[name='q']::placeholder {
 }
 
 .allauth-form-inner-content button:hover,
-.allauth-form-inner-content input[type='submit']:hover {	
+.allauth-form-inner-content input[type='submit']:hover {
 	color: #fff;
     background-color: #222;
     border-color: #222;
@@ -329,9 +332,9 @@ input[name='q']::placeholder {
 }
 
 .outlined-text {
-    text-shadow: 
+    text-shadow:
         3px 3px 0 #000,
-       -1px -1px 0 #000,  
+       -1px -1px 0 #000,
         1px -1px 0 #000,
        -1px  1px 0 #000,
         1px  1px 0 #000;
@@ -375,16 +378,16 @@ input[name='q']::placeholder {
 }
 
 .stars-small {
-    font-size: 1.2em; 
+    font-size: 1.2em;
 }
 
 /* Carousel CSS */
 .custom-arrow {
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .custom-arrow:hover {
-    background-color: rgba(0, 0, 0, 0.8); 
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .carousel-control-prev-icon,
@@ -411,12 +414,12 @@ input[name='q']::placeholder {
 }
 
 .book-carousel-item .card {
-    max-width: 300px; 
-    width: 100%; 
+    max-width: 300px;
+    width: 100%;
     margin: auto;
 }
 
 .card-img-top {
     max-width: 100%;
-    height: auto; 
+    height: auto;
 }
