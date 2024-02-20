@@ -140,7 +140,10 @@ The development of the Brandon's Bookstore website took careful consideration of
 
 Further, the site has been equipped with a Robots.txt and a Sitemap.xml file to enable Google to efficiently trawl and scrape the site.
 
-Finally a facebook business page was created for the site.
+As per the marking criteria, I have created a dummy Facebook page by editing the provided mock-up via paint.net in order to show what the site's Facebook page may look like if somebody were to create one. I also want to make it known I appreciate the option was given to complete the task this way due to my own misgivings surrounding Facebook and reticence to create any kind of account, even a dummy one for a hypothetical e-commerce site.
+
+![image](https://github.com/BrandonPCollins/project-5-bookshop/assets/131177569/58e1a0f1-92d8-40bd-ba35-8233422d9140)
+
 
 ---
 
