@@ -55,6 +55,8 @@ Brandon's Bookshop offers a comprehensive e-commerce platform where users can br
 
 Brandon's Bookshop offers newsletters to keep users informed about the latest updates, promotions, and events. Newsletter content could include but not be limited to acquisitions of new rare books by the store, important news regarding the store, exclusive offers, potential visits and events featuring famous authors, and more.
 
+![image](https://github.com/BrandonPCollins/project-5-bookshop/assets/131177569/00857f0c-6e61-4bc7-bf87-5552e7636a93)
+
 ### Featured Books 
 
 All products have a boolean value which when enabled add them to the featured books carousel on the site's index page. Scrolling carousel allows users to scroll through the books and allows me to know consistently that it will always appear as a single book on the main page no matter how many are added as "featured". Initially I didn't account for this and when I tested it all the featured books stacked on top of each-other leading to an incredibly bloated and long page, and thus made me adopt the carousel approach to featuring the products.  
@@ -62,6 +64,13 @@ All products have a boolean value which when enabled add them to the featured bo
 ### User Testimonials
 
 To increase the trustworthiness of our site and thus elevate it within the SEO standings I've included a rotating carousel or User Testimonials at the foot of the home/index page. At the moment it's two static reviews written into the page itself, it serves as good practice in gaining user loyalty and SEO optimisation, and a proof of concept that can be expanded upon to include real and dynamically scripted user experience testimonials in the future.
+
+### About and FAQ Page
+
+Further increase the site's SEO standings.
+
+![image](https://github.com/BrandonPCollins/project-5-bookshop/assets/131177569/f71a1700-8cfa-4f14-9972-a11f384d25aa)
+
 
 ### Favicon
 
