@@ -65,6 +65,8 @@ All products have a boolean value which when enabled add them to the featured bo
 
 To increase the trustworthiness of our site and thus elevate it within the SEO standings I've included a rotating carousel or User Testimonials at the foot of the home/index page. At the moment it's two static reviews written into the page itself, it serves as good practice in gaining user loyalty and SEO optimisation, and a proof of concept that can be expanded upon to include real and dynamically scripted user experience testimonials in the future.
 
+![image](https://github.com/BrandonPCollins/project-5-bookshop/assets/131177569/7f910b41-5c68-429d-9094-c2b756f19f09)
+
 ### About and FAQ Page
 
 Further increase the site's SEO standings.
