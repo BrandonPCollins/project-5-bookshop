@@ -50,7 +50,13 @@ Brandon's Bookshop offers a comprehensive e-commerce platform where users can br
 
 ### Blog Post Creation and Management
 
-### Post and Comment Functionality
+### Comment Functionality
+
+All users can comment on blog posts made by admins, and reply to other users comments, facilitating conversation and discussion.
+
+### Like Functionality
+
+In addition to the ability to comment on posts and reply to other user's comments, users can display their agreement with posts via the like system.
 
 ### Newsletters
 
@@ -103,7 +109,7 @@ In concordance with the marking criteria, Brandon's Bookshop features several cu
 
 ### Admin Blogs
 
-### Comment System
+### Comment System & Like Functionality
 
 Full CRUD functionality is implemented in the comment system for users. Create/ Read/ Update/ Delete
 
@@ -206,9 +212,9 @@ Changed the body image from a .jpg to a .webp per lighthouse's suggest for super
 
 ## Future Features
 
-* Full CRUD Functionality for the sending of Newsletters. Currently, it is performed exclusively through Administration tab but in a future build having the ability to draft, view and send Newsletters integrated into the website, as the functionality to add Products from the page itself, would be a great feature for future superusers and clients.
+* Full CRUD Functionality for the sending of Newsletters. Currently, it is performed exclusively through the Administration tab but in a future build having the ability to draft, view and send Newsletters integrated into the website, as the functionality to add Products from the page itself, would be a great feature for future superusers and clients.
 
-* The adding of a pdf selection to the products model allowing users to choose between the purchase of physical or pdf versions of their purchases, which will then be sent to their email.
+* Expansion of the user review system to beyond  just a star rating. Potentially implementing a system of review comments where the user's star rating is logged alongside a text review and then displayed beneath the product, similar to how the comments are displayed beneath the blog posts.
 
 * A way for customers to submit testimonials for display on the carousel at the bottom of the index page and thus allowing them to appear dynamically? {% for testimonial in testimonials %}
 
