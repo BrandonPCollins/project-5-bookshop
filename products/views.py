@@ -51,7 +51,7 @@ def all_products(request):
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
-    
+
     for product in products:
         ratings = Rating.objects.filter(product=product)
         average_rating = ratings.aggregate(average=Avg('rating'))['average']
@@ -63,7 +63,7 @@ def all_products(request):
         'current_categories': categories,
         'current_sorting': current_sorting,
     }
-    
+
     return render(request, 'products/products.html', context)
 
 def product_detail(request, product_id):
@@ -180,4 +180,3 @@ def rate_product(request, product_id):
         return JsonResponse({'message': 'Rating submitted successfully'})
     else:
         return JsonResponse({'error': 'Invalid request'})
-    
