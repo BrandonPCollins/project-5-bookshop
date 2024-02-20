@@ -22,7 +22,7 @@
       - [Local Deployment](#local-deployment)
       - [Heroku Deployment](#heroku-deployment)
    - [Features](#features)
-      - [Navbar Customization](#navbar-customization)
+      - [Navbar](#navbar)
       - [Post and Comment Functionality](#post-and-comment-functionality)
       - [Post Likes](#post-likes)
       - [User Profiles](#user-profiles)
@@ -43,11 +43,11 @@ Brandon's Bookshop offers a comprehensive e-commerce platform where users can br
 
 ### Full E-Commerce Shopping Site
 
+### Navbar
+
 ### Product Categorisation 
 
 ### Blog Post Creation and Management
-
-### Navbar Customization
 
 ### Post and Comment Functionality
 
