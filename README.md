@@ -21,8 +21,9 @@
    - [Deployment](#deployment)
       - [Local Deployment](#local-deployment)
       - [Heroku Deployment](#heroku-deployment)
+      - [Forking](#forking)
    - [Features](#features)
-      - [Navbar Customization](#navbar-customization)
+      - [Navbar](#navbar)
       - [Post and Comment Functionality](#post-and-comment-functionality)
       - [Post Likes](#post-likes)
       - [User Profiles](#user-profiles)
@@ -37,21 +38,25 @@
 
 # Brandon's Bookshop
 
-An online rare book retailer.
+Brandon's Bookshop offers a comprehensive e-commerce platform where users can browse, search, and purchase rare books online. The platform provides a seamless shopping experience, with intuitive navigation, secure transactions, and a user-friendly interface.
 
 ## Key Features
 
 ### Full E-Commerce Shopping Site
 
+### Navbar
+
 ### Product Categorisation 
 
 ### Blog Post Creation and Management
 
-### Navbar Customization
-
 ### Post and Comment Functionality
 
 ### Newsletters
+
+Brandon's Bookshop offers newsletters to keep users informed about the latest updates, promotions, and events. Newsletter content could include but not be limited to acquisitions of new rare books by the store, important news regarding the store, exclusive offers, potential visits and events featuring famous authors, and more.
+
+![image](https://github.com/BrandonPCollins/project-5-bookshop/assets/131177569/00857f0c-6e61-4bc7-bf87-5552e7636a93)
 
 ### Featured Books 
 
@@ -61,16 +66,28 @@ All products have a boolean value which when enabled add them to the featured bo
 
 To increase the trustworthiness of our site and thus elevate it within the SEO standings I've included a rotating carousel or User Testimonials at the foot of the home/index page. At the moment it's two static reviews written into the page itself, it serves as good practice in gaining user loyalty and SEO optimisation, and a proof of concept that can be expanded upon to include real and dynamically scripted user experience testimonials in the future.
 
+![image](https://github.com/BrandonPCollins/project-5-bookshop/assets/131177569/7f910b41-5c68-429d-9094-c2b756f19f09)
+
+### About and FAQ Page
+
+Further increase the site's SEO standings.
+
+![image](https://github.com/BrandonPCollins/project-5-bookshop/assets/131177569/f71a1700-8cfa-4f14-9972-a11f384d25aa)
+
+
 ### Favicon
 
-Used Microsoft Bing Image Generator to create a favicon for the site
+Brandon's Bookshop features a custom favicon for brand recognition and visual identity. The favicon is prominently displayed in browser tabs, bookmarks, and shortcuts, helping users identify the site quickly and easily. Due to my complete lack of artistic talent, the favicon was created using Microsoft Bing Image Generator.
 
 ![favicon](https://github.com/BrandonPCollins/project-5-bookshop/assets/131177569/b978047b-9548-4ece-b52d-6c943867d7fa)
-
 
 ### Wireframes
 
 ### Colour Palette  
+
+Used coolors.co to generate a colour palette for the site. It was important for me to have a clean black and white as the base for the site's colour schematic, bestowing the site a clean, professional look while calling to mind the simplicity of the written page. Another important aspect was the featuring of an ochre reddish brown colour, one often semantically associated with older books due to the wearing of their leather colours, which the palette generator graciously provided. The other two supplementary colours go unused in the current site's iteration to keep the colour scheme muted, but they complement the ambit well and could easily be integrated in the future.
+
+![image](https://github.com/BrandonPCollins/project-5-bookshop/assets/131177569/8f4f872f-ecfd-43c9-8fce-6cde6ec57a79)
 
 ## Agile Development Approach
 
@@ -78,7 +95,21 @@ Used Microsoft Bing Image Generator to create a favicon for the site
 
 Issues divided into [milestones](https://github.com/BrandonPCollins/project-5-bookshop/milestones)
 
-### Dynamic Adaptability and Continuous Improvement
+
+## Custom Models
+In concordance with the marking criteria, Brandon's Bookshop features several custom models completely distinct from those showcased within
+
+### Rating System
+
+### Admin Blogs
+
+### Comment System
+
+Full CRUD functionality is implemented in the comment system for users. Create/ Read/ Update/ Delete
+
+### Newsletters
+
+---
 
 ## Deployment
 
@@ -105,11 +136,12 @@ This project was initialiased using the [Code Institute Gitpod Full Template](ht
 
 5. **Deployment:**
    -In the ROOT directory create a Procfile containing "web: gunicorn myblog.wsgi"
-   -Run pip3 freeze to get the requirements and copy them into a requirements.txt file.
+   -Run pip3 freeze to get the requirements and copy them into a requirements.txt file in the project's main directory.
+   
 ### Heroku Deployment:
 
 1. **Create Heroku App:**
-   - Create a new Heroku app and link it to the Git repository for the project.
+   - Create a new Heroku app and link it to the Git repository for the project under the Deploy tab. If desired enable automatic deployment.
 
 2. **Heroku Configurations:**
    - Set up Heroku Config Vars to account for necessary variables such as Cloudinary URL, the Database URL and the Secret Key. Also, add DISABLE_COLLECTSTATIC with a value of 1 until final deployment.
@@ -119,26 +151,19 @@ This project was initialiased using the [Code Institute Gitpod Full Template](ht
    - The database used in this project (Elephant SQL) should be configured in Heroku.
 
 4. **Deployment:**
-   - Deploy the project to Heroku by pushing the code to the Heroku remote repository, setting Debug=True to Debug=False before final deployment.
+   - Deploy the project to Heroku by pushing the code to the Heroku remote repository, setting Debug=True to Debug=False in your settings.py before final deployment. Run  heroku run python manage.py migrate to ensure the migrations for the project's models are correctly running on the Heroku app.
    - The project should now be accessible through the provided Heroku app URL.
 
 This deployment process ensures a smooth transition from local development to a live Heroku environment, providing a scalable and accessible platform for users.
 
----
+### Forking:
 
-## Custom Models
-In concordance with the marking criteria, Brandon's Bookshop features several custom models completely distinct from those showcased within
+1. **Forking on Github:**
+   - A user can create a copy of this site to view or alter without affecting the original repository.
+   - This is easily done by going to the project's GitHub page with an account, and clicking the "Fork" button on the right side of the page.
+   - This will create a copy of the repository within the user's repository.
 
-### Rating System
-
-### Admin Blogs
-
-### Comment System
-
-Full CRUD functionality is implemented in the comment system for users. Create/ Read/ Update/ Delete
-
-### Newsletters
-
+     
 ---
 
 ## Testing
