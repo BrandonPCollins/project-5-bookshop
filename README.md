@@ -37,7 +37,7 @@
 
 # Brandon's Bookshop
 
-An online rare book retailer.
+Brandon's Bookshop offers a comprehensive e-commerce platform where users can browse, search, and purchase rare books online. The platform provides a seamless shopping experience, with intuitive navigation, secure transactions, and a user-friendly interface.
 
 ## Key Features
 
@@ -53,6 +53,8 @@ An online rare book retailer.
 
 ### Newsletters
 
+Brandon's Bookshop offers newsletters to keep users informed about the latest updates, promotions, and events. Newsletter content could include but not be limited to acquisitions of new rare books by the store, important news regarding the store, exclusive offers, potential visits and events featuring famous authors, and more.
+
 ### Featured Books 
 
 All products have a boolean value which when enabled add them to the featured books carousel on the site's index page. Scrolling carousel allows users to scroll through the books and allows me to know consistently that it will always appear as a single book on the main page no matter how many are added as "featured". Initially I didn't account for this and when I tested it all the featured books stacked on top of each-other leading to an incredibly bloated and long page, and thus made me adopt the carousel approach to featuring the products.  
@@ -63,7 +65,7 @@ To increase the trustworthiness of our site and thus elevate it within the SEO s
 
 ### Favicon
 
-Used Microsoft Bing Image Generator to create a favicon for the site
+Brandon's Bookshop features a custom favicon for brand recognition and visual identity. The favicon is prominently displayed in browser tabs, bookmarks, and shortcuts, helping users identify the site quickly and easily. Due to my complete lack of artistic talent, the favicon was created using Microsoft Bing Image Generator.
 
 ![favicon](https://github.com/BrandonPCollins/project-5-bookshop/assets/131177569/b978047b-9548-4ece-b52d-6c943867d7fa)
 
@@ -71,6 +73,10 @@ Used Microsoft Bing Image Generator to create a favicon for the site
 ### Wireframes
 
 ### Colour Palette  
+
+Used coolors.co to generate a colour palette for the site. It was important for me to have a clean black and white as the base for the site's colour schematic, bestowing the site a clean, professional look while calling to mind the simplicity of the written page. Another important aspect was the featuring of an ochre reddish brown colour, one often semantically associated with older books due to the wearing of their leather colours, which the palette generator graciously provided. The other two supplementary colours go unused in the current site's iteration to keep the colour scheme muted, but they complement the ambit well and could easily be integrated in the future.
+
+![image](https://github.com/BrandonPCollins/project-5-bookshop/assets/131177569/8f4f872f-ecfd-43c9-8fce-6cde6ec57a79)
 
 ## Agile Development Approach
 
