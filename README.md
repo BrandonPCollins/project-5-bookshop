@@ -21,6 +21,7 @@
    - [Deployment](#deployment)
       - [Local Deployment](#local-deployment)
       - [Heroku Deployment](#heroku-deployment)
+      - [Forking](#forking)
    - [Features](#features)
       - [Navbar](#navbar)
       - [Post and Comment Functionality](#post-and-comment-functionality)
@@ -136,6 +137,7 @@ This project was initialiased using the [Code Institute Gitpod Full Template](ht
 5. **Deployment:**
    -In the ROOT directory create a Procfile containing "web: gunicorn myblog.wsgi"
    -Run pip3 freeze to get the requirements and copy them into a requirements.txt file in the project's main directory.
+   
 ### Heroku Deployment:
 
 1. **Create Heroku App:**
@@ -154,6 +156,14 @@ This project was initialiased using the [Code Institute Gitpod Full Template](ht
 
 This deployment process ensures a smooth transition from local development to a live Heroku environment, providing a scalable and accessible platform for users.
 
+### Forking:
+
+1. **Forking on Github:**
+   - A user can create a copy of this site to view or alter without affecting the original repository.
+   - This is easily done by going to the project's GitHub page with an account, and clicking the "Fork" button on the right side of the page.
+   - This will create a copy of the repository within the user's repository.
+
+     
 ---
 
 ## Testing
