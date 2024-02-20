@@ -38,11 +38,15 @@
 
 # Brandon's Bookshop
 
+![image](https://github.com/BrandonPCollins/project-5-bookshop/assets/131177569/ce5e2dad-bef0-4a86-b256-6e0c10e6ec38)
+
 Brandon's Bookshop offers a comprehensive e-commerce platform where users can browse, search, and purchase rare books online. The platform provides a seamless shopping experience, with intuitive navigation, secure transactions, and a user-friendly interface.
 
 ## Key Features
 
 ### Full E-Commerce Shopping Site
+
+As an e-commerce platform, Brandon's Bookstore operates primarily through its online storefront. Customers can browse through the extensive collection of books, conveniently place orders, and securely complete transactions without leaving the comfort of their homes.
 
 ### Navbar
 
@@ -117,9 +121,28 @@ Full CRUD functionality is implemented in the comment system for users. Create/ 
 
 ---
 
+## Business Model
+
+Brandon's Bookstore operates as a business-to-customer (B2C) e-commerce platform, offering a specialized selection of rare and valuable books to discerning customers. The core objective of the platform is to provide a seamless and convenient online shopping experience for individuals seeking unique and tangible luxury products.
+
+The bookstore focuses exclusively on curating a collection of rare, antique, and valuable books. This specialization allows Brandon's Bookstore to distinguish itself in the market and cater to a niche audience of book enthusiasts, collectors, and connoisseurs.
+
+The primary revenue stream for Brandon's Bookstore comes from the sale of rare and valuable books through its online platform. Additional future revenue opportunities would arise from value-added services such as appraisals, restoration services, and subscription-based memberships offering exclusive benefits to customers, all of which can be integrated into the site at a future date.
+
+### Marketing
+
+The development of the Brandon's Bookstore website took careful consideration of SEO optimisation in its design. The meta tags are incorporated into the base.html and thus featured on every page of the site, and to increase the trustworthiness of the site within search engine algorithms a FAQ page and a customer testimonial carousel were implemented.
+
+Further, the site has been equipped with a Robots.txt and a Sitemap.xml file to enable Google to efficiently trawl and scrape the site.
+
+Finally a facebook business page was created for the site.
+
+---
+
+
 ## Deployment
 
-This project was initialiased using the [Code Institute Gitpod Full Template](https://github.com/Code-Institute-Org/gitpod-full-template)
+This project was initialised using the [Code Institute Gitpod Full Template](https://github.com/Code-Institute-Org/gitpod-full-template)
 
 ### Local Deployment:
 
@@ -217,6 +240,8 @@ Changed the body image from a .jpg to a .webp per lighthouse's suggest for super
 * Expansion of the user review system to beyond  just a star rating. Potentially implementing a system of review comments where the user's star rating is logged alongside a text review and then displayed beneath the product, similar to how the comments are displayed beneath the blog posts.
 
 * A way for customers to submit testimonials for display on the carousel at the bottom of the index page and thus allowing them to appear dynamically? {% for testimonial in testimonials %}
+
+* A model for customers to submit their own rare books for appraisal that the site can then offer to either purchase the book from the customer or offer a quote on a restoration service.
 
 ---
 
