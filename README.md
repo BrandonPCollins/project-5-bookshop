@@ -48,7 +48,11 @@ Brandon's Bookshop offers a comprehensive e-commerce platform where users can br
 
 As an e-commerce platform, Brandon's Bookstore operates primarily through its online storefront. Customers can browse through the extensive collection of books, conveniently place orders, and securely complete transactions without leaving the comfort of their homes.
 
-### Navbar
+### Navigation
+
+Embedded via an includes template onto the head of every page is a responsive Navbar element which provides the user quick and easy access to every page on the Brandon's Book site. The Navbar dynamically resizes and alters its layout depending on the screen's size to provide users with a seamless and effortless navigation experience. This navigation bar includes a search bar to quickly browse the site's products via their names and descriptions, links to the user's profile and cart, and a variety of list items and drop-down menus providing access to the site's pages.
+
+![image](https://github.com/BrandonPCollins/project-5-bookshop/assets/131177569/2312a287-eec3-47a0-a7eb-f69108ab6976)
 
 ### Product Categorisation 
 
@@ -109,7 +113,6 @@ Used coolors.co to generate a colour palette for the site. It was important for 
 [Kanban Project Board](https://github.com/users/BrandonPCollins/projects/5)
 
 Issues divided into [milestones](https://github.com/BrandonPCollins/project-5-bookshop/milestones)
-
 
 ## Custom Models
 In concordance with the marking criteria, Brandon's Bookshop features several custom models completely distinct from those showcased within
