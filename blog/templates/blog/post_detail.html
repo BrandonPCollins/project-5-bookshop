@@ -39,32 +39,43 @@
                 <h5 class="card-title">{{ comment.author }}</h5>
                 <p class="card-text">{{ comment.text }}</p>
                 <p class="card-text"><small class="text-muted">{{ comment.created_date }}</small></p>
-    
+
                 <!-- Delete & Edit comment button -->
                 {% if user.is_authenticated and user == comment.author %}
                     <a href="{% url 'edit_comment' comment.id %}" class="btn btn-primary btn-sm">Edit</a>
                     <a href="{% url 'delete_comment' comment.id %}" class="btn btn-danger btn-sm">Delete</a>
                 {% endif %}
-    
+
+                <!-- Like comment button -->
+                <button class="like-button btn" data-id="{{ comment.id }}" data-liked="{{ comment.is_liked }}">
+                    <i class="{{ comment.is_liked|yesno:'fas fa-thumbs-up,far fa-thumbs-up' }}"></i> {{ comment.is_liked|yesno:'Unlike,Like' }}
+                </button>
+                <span class="likes-count">{{ comment.likes.count }}</span>
+
                 <!-- Display replies -->
                 {% for reply in comment.replies.all %}
-                    <div class="ml-5"> <!-- Indent replies -->
+                    <div class="ml-5">
                         <div class="card mt-2">
                             <div class="card-body">
                                 <h6 class="card-subtitle mb-2 text-muted">{{ reply.author }}</h6>
                                 <p class="card-text">{{ reply.text }}</p>
                                 <p class="card-text"><small class="text-muted">{{ reply.created_date }}</small></p>
-    
+
                                 <!-- Delete & Edit reply button -->
                                 {% if user.is_authenticated and user == reply.author %}
                                     <a href="{% url 'edit_comment' reply.id %}" class="btn btn-primary btn-sm">Edit</a>
                                     <a href="{% url 'delete_comment' reply.id %}" class="btn btn-danger btn-sm">Delete</a>
                                 {% endif %}
+
+                                <button class="like-button btn" data-id="{{ reply.id }}" data-liked="{{ reply.is_liked }}">
+                                    <i class="{{ reply.is_liked|yesno:'fas fa-thumbs-up,far fa-thumbs-up' }}"></i> {{ reply.is_liked|yesno:'Unlike,Like' }}
+                                </button>
+                                <span class="likes-count">{{ reply.likes.count }}</span>
                             </div>
                         </div>
                     </div>
                 {% endfor %}
-    
+
                 <!-- Reply form -->
                 {% if user.is_authenticated %}
                     <form method="post" class="ml-5 mt-3">
@@ -81,7 +92,7 @@
     {% empty %}
         <p>No comments yet.</p>
     {% endfor %}
-        
+
         {% if comment_form %}
             <div class="card mb-3">
                 <div class="card-body">
@@ -97,4 +108,47 @@
             <p>You must be logged in to leave a comment.</p>
         {% endif %}
     </div>
+
+<script>
+    $(document).ready(function() {
+        $('.like-button').click(function() {
+            console.log('Like button clicked');
+            var button = $(this);
+            var commentId = button.data('id');
+            var csrftoken = getCookie('csrftoken');
+            var liked = button.data('liked') == 'true';
+
+            $.post('{% url 'like_comment' %}', {'id': commentId, 'csrfmiddlewaretoken': csrftoken, 'liked': liked}, function(data) {
+                if (data.message) {
+                    alert(data.message);
+                } else {
+                    button.next('.likes-count').text(data.likes_count);
+                    if (data.liked) {
+                        button.html('<i class="fas fa-thumbs-up"></i> Unlike');
+                        button.data('liked', 'true');
+                    } else {
+                        button.html('<i class="far fa-thumbs-up"></i> Like');
+                        button.data('liked', 'false');
+                    }
+                }
+            });
+        });
+    });
+
+    function getCookie(name) {
+        var cookieValue = null;
+        if (document.cookie && document.cookie !== '') {
+            var cookies = document.cookie.split(';');
+            for (var i = 0; i < cookies.length; i++) {
+                var cookie = jQuery.trim(cookies[i]);
+                if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                    break;
+                }
+            }
+        }
+        return cookieValue;
+    }
+</script>
 {% endblock %}
+
