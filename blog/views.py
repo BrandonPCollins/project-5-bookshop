@@ -31,6 +31,7 @@ def post_detail(request, post_id):
                 if parent_id:
                     new_comment.parent = Comment.objects.get(id=parent_id)
                 new_comment.save()
+                return redirect('post_detail', post_id=post.pk)
         else:
             comment_form = CommentForm()
 
