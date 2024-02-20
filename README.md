@@ -38,6 +38,8 @@
 
 # Brandon's Bookshop
 
+![image](https://github.com/BrandonPCollins/project-5-bookshop/assets/131177569/ce5e2dad-bef0-4a86-b256-6e0c10e6ec38)
+
 Brandon's Bookshop offers a comprehensive e-commerce platform where users can browse, search, and purchase rare books online. The platform provides a seamless shopping experience, with intuitive navigation, secure transactions, and a user-friendly interface.
 
 ## Key Features
@@ -116,6 +118,11 @@ Full CRUD functionality is implemented in the comment system for users. Create/ 
 ### Newsletters
 
 ---
+
+## Business Model
+
+---
+
 
 ## Deployment
 
