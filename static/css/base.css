@@ -331,6 +331,18 @@ input[name='q']::placeholder {
     }
 }
 
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .display-4 {
+        font-size: 1rem;
+    }
+}
+
 .outlined-text {
     text-shadow:
         3px 3px 0 #000,
