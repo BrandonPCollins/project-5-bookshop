@@ -93,6 +93,11 @@ Brandon's Bookshop features a custom favicon for brand recognition and visual id
 
 ### Wireframes
 
+Wireframes created using wireframe.cc
+
+![image](https://github.com/BrandonPCollins/project-5-bookshop/assets/131177569/9150e750-3cd3-453d-8365-969730dd5a9d)
+
+
 ### Colour Palette  
 
 Used coolors.co to generate a colour palette for the site. It was important for me to have a clean black and white as the base for the site's colour schematic, bestowing the site a clean, professional look while calling to mind the simplicity of the written page. Another important aspect was the featuring of an ochre reddish brown colour, one often semantically associated with older books due to the wearing of their leather colours, which the palette generator graciously provided. The other two supplementary colours go unused in the current site's iteration to keep the colour scheme muted, but they complement the ambit well and could easily be integrated in the future.
