@@ -75,7 +75,7 @@ Products are categorized for easy navigation and search. This feature enhances t
 
 ### Blog Post Creation and Management
 
-Admins can create and manage blog posts, providing a platform for sharing news, updates, and interesting content with the user community.
+Admins can create and manage blog posts from the site itself rather than having to enter the Django admin, providing a platform for sharing news, updates, and interesting content with the user community. These blog posts were designed with full CRUD functionality.
 
 ### Comment and Reply Functionality
 
