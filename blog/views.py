@@ -3,7 +3,7 @@ from .models import Post, Comment, Like
 from .forms import CommentForm, EditCommentForm, PostForm
 from django.http import HttpResponseForbidden, JsonResponse
 from django.views.decorators.http import require_POST
-from django.contrib.auth.decorators import login_required
+from django.contrib.auth.decorators import login_required, user_passes_test
 from django.contrib.admin.views.decorators import staff_member_required
 
 
@@ -67,6 +67,17 @@ def edit_post(request, post_id):
     else:
         form = PostForm(instance=post)
     return render(request, 'blog/edit_post.html', {'form': form, 'post': post})
+
+@login_required
+@user_passes_test(lambda u: u.is_staff)
+def delete_post(request, post_id):
+    try:
+        post = Post.objects.get(pk=post_id)
+    except Post.DoesNotExist:
+        raise Http404("Post does not exist")
+    post.delete()
+    return redirect('post_list')
+
 
 def delete_comment(request, comment_id):
     comment = get_object_or_404(Comment, id=comment_id)
