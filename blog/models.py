@@ -25,8 +25,9 @@ class Comment(models.Model):
         return f'Comment by {self.author}'
 
     def is_liked_by_user(self, user):
-        return self.likes.filter(user=user).exists()
-
+        if user.is_authenticated:
+            return self.likes.filter(id=user.id).exists()
+        return False
 class Like(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     comment = models.ForeignKey(Comment, on_delete=models.CASCADE, related_name='likes')

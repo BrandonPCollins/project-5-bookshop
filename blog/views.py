@@ -4,6 +4,7 @@ from .forms import CommentForm, EditCommentForm, PostForm
 from django.http import HttpResponseForbidden, JsonResponse
 from django.views.decorators.http import require_POST
 from django.contrib.auth.decorators import login_required
+from django.contrib.admin.views.decorators import staff_member_required
 
 
 def post_list(request):
@@ -13,10 +14,11 @@ def post_list(request):
 def post_detail(request, post_id):
     post = get_object_or_404(Post, pk=post_id)
     comments = Comment.objects.filter(post=post, parent=None)
-    for comment in comments:
-        comment.is_liked = comment.is_liked_by_user(request.user)
-        for reply in comment.replies.all():
-            reply.is_liked = reply.is_liked_by_user(request.user)
+    if request.user.is_authenticated:
+        for comment in comments:
+            comment.is_liked = comment.is_liked_by_user(request.user)
+            for reply in comment.replies.all():
+                reply.is_liked = reply.is_liked_by_user(request.user)
     new_comment = None
     comment_form = None
 
@@ -52,6 +54,19 @@ def create_post(request):
         form = PostForm()
 
     return render(request, 'blog/create_post.html', {'form': form})
+
+@staff_member_required
+def edit_post(request, post_id):
+    post = get_object_or_404(Post, pk=post_id)
+    if request.method == "POST":
+        form = PostForm(request.POST, request.FILES, instance=post)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.save()
+            return redirect('post_detail', post_id=post.pk)
+    else:
+        form = PostForm(instance=post)
+    return render(request, 'blog/edit_post.html', {'form': form, 'post': post})
 
 def delete_comment(request, comment_id):
     comment = get_object_or_404(Comment, id=comment_id)
