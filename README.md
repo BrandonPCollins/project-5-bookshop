@@ -106,9 +106,14 @@ Brandon's Bookshop features a custom favicon for brand recognition and visual id
 
 ### Wireframes
 
-Wireframes created using wireframe.cc
+The structure of the site followed the basic use of a base.html file and the inclusion of the navbar at the top of each page and the footer at the bottom to provide consistency across the user experience. Sandwiched between the navbar and the footer on each page was the content of the page itself, be it the product list, product details, the blog page or the FAQ section. This repeated layout provides the user with familiarity upon visiting each page. The only exception to the rule was the landing page which is slightly different due to the various calls-to-actions featured including the banner and the featured product carousel.
+
+All Wireframes were created using wireframe.cc
 
 ![image](https://github.com/BrandonPCollins/project-5-bookshop/assets/131177569/9150e750-3cd3-453d-8365-969730dd5a9d)
+
+![image](https://github.com/BrandonPCollins/project-5-bookshop/assets/131177569/1482d143-e52f-427c-a57c-f30f7dbf000f)
+
 
 
 ### Colour Palette  
