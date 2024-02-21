@@ -3,7 +3,7 @@
 # Welcome Code Institute Assessor, to Brandon's Bookshop!
 
 
-<h1> [Final Deployment Available Here](https://project-5-books-44675354c311.herokuapp.com/) </h1>
+## [Final Deployment Available Here](https://project-5-books-44675354c311.herokuapp.com/) 
 
 ---
 
@@ -11,10 +11,7 @@
 
 1. [Brandon's Bookshop](#bookshop)
    - [Key Features](#key-features)
-      - [News Aggregation and Sorting](#news-aggregation-and-sorting)
-      - [User Profiles and Social Connectivity](#user-profiles-and-social-connectivity)
-      - [Post Categorization](#post-categorisation)
-      - [Content Creation and Management](#content-creation-and-management)
+      - [Full E-Commerce Shopping Site](#full-e-commerce-shopping-site)
       - [Colour Palette](#colour-palette)
    - [Agile Development Approach](#agile-development-approach)
       - [Dynamic Adaptability and Continuous Improvement](#dynamic-adaptability-and-continuous-improvement)
