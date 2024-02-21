@@ -8,73 +8,93 @@
 
 
 <url>
-  <loc>https://project-5-books-44675354c311.herokuapp.com/</loc>
-  <lastmod>2024-02-18T09:07:13+00:00</lastmod>
+  <loc>https://books-project-5-992c27c88b5c.herokuapp.com/</loc>
+  <lastmod>2024-02-21T18:07:42+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://project-5-books-44675354c311.herokuapp.com/accounts/signup/</loc>
-  <lastmod>2024-02-18T09:07:13+00:00</lastmod>
+  <loc>https://books-project-5-992c27c88b5c.herokuapp.com/accounts/signup/</loc>
+  <lastmod>2024-02-21T18:07:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://project-5-books-44675354c311.herokuapp.com/accounts/login/</loc>
-  <lastmod>2024-02-18T09:07:13+00:00</lastmod>
+  <loc>https://books-project-5-992c27c88b5c.herokuapp.com/accounts/login/</loc>
+  <lastmod>2024-02-21T18:07:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://project-5-books-44675354c311.herokuapp.com/bag/</loc>
-  <lastmod>2024-02-18T09:07:13+00:00</lastmod>
+  <loc>https://books-project-5-992c27c88b5c.herokuapp.com/bag/</loc>
+  <lastmod>2024-02-21T18:07:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://project-5-books-44675354c311.herokuapp.com/products/?sort=price&amp;direction=asc</loc>
-  <lastmod>2024-02-18T09:07:13+00:00</lastmod>
+  <loc>https://books-project-5-992c27c88b5c.herokuapp.com/products/?sort=price&amp;direction=asc</loc>
+  <lastmod>2024-02-21T18:07:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://project-5-books-44675354c311.herokuapp.com/products/?sort=category&amp;direction=asc</loc>
-  <lastmod>2024-02-18T09:07:13+00:00</lastmod>
+  <loc>https://books-project-5-992c27c88b5c.herokuapp.com/products/?sort=category&amp;direction=asc</loc>
+  <lastmod>2024-02-21T18:07:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://project-5-books-44675354c311.herokuapp.com/products/</loc>
-  <lastmod>2024-02-18T09:07:13+00:00</lastmod>
+  <loc>https://books-project-5-992c27c88b5c.herokuapp.com/products/</loc>
+  <lastmod>2024-02-21T18:07:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://project-5-books-44675354c311.herokuapp.com/products/?category=novels</loc>
-  <lastmod>2024-02-18T09:07:13+00:00</lastmod>
+  <loc>https://books-project-5-992c27c88b5c.herokuapp.com/products/?category=novels</loc>
+  <lastmod>2024-02-21T18:07:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://project-5-books-44675354c311.herokuapp.com/products/?category=short-stories</loc>
-  <lastmod>2024-02-18T09:07:13+00:00</lastmod>
+  <loc>https://books-project-5-992c27c88b5c.herokuapp.com/products/?category=short-stories</loc>
+  <lastmod>2024-02-21T18:07:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://project-5-books-44675354c311.herokuapp.com/newsletter/</loc>
-  <lastmod>2024-02-18T09:07:13+00:00</lastmod>
+  <loc>https://books-project-5-992c27c88b5c.herokuapp.com/products/?category=poetry</loc>
+  <lastmod>2024-02-21T18:07:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://project-5-books-44675354c311.herokuapp.com/blog/</loc>
-  <lastmod>2024-02-18T09:07:13+00:00</lastmod>
+  <loc>https://books-project-5-992c27c88b5c.herokuapp.com/newsletter/</loc>
+  <lastmod>2024-02-21T18:07:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://project-5-books-44675354c311.herokuapp.com/accounts/password/reset/</loc>
-  <lastmod>2024-02-18T09:07:13+00:00</lastmod>
+  <loc>https://books-project-5-992c27c88b5c.herokuapp.com/blog/</loc>
+  <lastmod>2024-02-21T18:07:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://books-project-5-992c27c88b5c.herokuapp.com/about/</loc>
+  <lastmod>2024-02-21T18:07:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://books-project-5-992c27c88b5c.herokuapp.com/products/3/</loc>
+  <lastmod>2024-02-21T18:07:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://books-project-5-992c27c88b5c.herokuapp.com/products/4/</loc>
+  <lastmod>2024-02-21T18:07:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://books-project-5-992c27c88b5c.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2024-02-21T18:07:42+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://project-5-books-44675354c311.herokuapp.com/products/1/</loc>
-  <lastmod>2024-02-18T09:07:13+00:00</lastmod>
+  <loc>https://books-project-5-992c27c88b5c.herokuapp.com/products/5/</loc>
+  <lastmod>2024-02-21T18:07:42+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://project-5-books-44675354c311.herokuapp.com/blog/1/</loc>
-  <lastmod>2024-02-18T09:07:13+00:00</lastmod>
+  <loc>https://books-project-5-992c27c88b5c.herokuapp.com/blog/1/</loc>
+  <lastmod>2024-02-21T18:07:42+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
