@@ -21,7 +21,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'a')
 DEBUG = True
 #DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'project-5-books-44675354c311.herokuapp.com',]
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'project-5-books-44675354c311.herokuapp.com', 'books-project-5-992c27c88b5c.herokuapp.com',]
 
 
 # Application definition
@@ -88,7 +88,7 @@ TEMPLATES = [
             'builtins': [
                 'crispy_forms.templatetags.crispy_forms_tags', #Added to use crispy forms
                 'crispy_forms.templatetags.crispy_forms_field',
-            ], 
+            ],
         },
     },
 ]
@@ -124,7 +124,7 @@ if 'DATABASE_URL' in os.environ:
     DATABASES = {
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-else: 
+else:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
