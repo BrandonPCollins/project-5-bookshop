@@ -44,6 +44,8 @@ Brandon's Bookshop offers a comprehensive e-commerce platform where users can br
 
 ## Key Features
 
+Brandon's Bookstore contains all the key features one would expect from an e-commerce store as a user, while also providing back-end functionality for the administrative side. In concordance with the marking criteria, Brandon's Bookshop features several custom models completely distinct from those showcased within
+
 ### Full E-Commerce Shopping Site
 
 As an e-commerce platform, Brandon's Bookstore operates primarily through its online storefront. Customers can browse through the extensive collection of books, conveniently place orders, and securely complete transactions without leaving the comfort of their homes.
@@ -56,7 +58,7 @@ Embedded via an includes template onto the head of every page is a responsive Na
 
 ### Product Categorisation 
 
-Products are categorized for easy navigation and search. This feature enhances the user experience by allowing users to quickly find the books they are interested in.
+Products are categorized for easy navigation and search. This feature enhances the user experience by allowing users to quickly find the books they are interested in. Further the 'Category' dropdown menu in the site's Navbar is updated dynamically from the current categories, meaning site admins won't have to update any HTML if they add further categories in the site's admin.
 
 ### Blog Post Creation and Management
 
@@ -64,11 +66,15 @@ Admins can create and manage blog posts, providing a platform for sharing news, 
 
 ### Comment Functionality
 
-All users can comment on blog posts made by admins, and reply to other users comments, facilitating conversation and discussion.
+All users can comment on blog posts made by admins, and reply to other users comments, facilitating conversation and discussion. The comments were created with full CRUD functionality in mind from the user's point of view, allowing them to create their comments, read other user's comments, update their comments and delete them.
 
 ### Like Functionality
 
 In addition to the ability to comment on posts and reply to other user's comments, users can display their agreement with posts via the like system.
+
+### Rating System
+
+Users have the ability to rate products using an integrated and dynamically visual star-rating system.
 
 ### Newsletters
 
@@ -92,7 +98,6 @@ The About and FAQ pages provide additional information about the bookstore and a
 
 ![image](https://github.com/BrandonPCollins/project-5-bookshop/assets/131177569/f71a1700-8cfa-4f14-9972-a11f384d25aa)
 
-
 ### Favicon
 
 Brandon's Bookshop features a custom favicon for brand recognition and visual identity. The favicon is prominently displayed in browser tabs, bookmarks, and shortcuts, helping users identify the site quickly and easily. Due to my complete lack of artistic talent, the favicon was created using Microsoft Bing Image Generator.
@@ -111,6 +116,7 @@ Wireframes created using wireframe.cc
 Used coolors.co to generate a colour palette for the site. It was important for me to have a clean black and white as the base for the site's colour schematic, bestowing the site a clean, professional look while calling to mind the simplicity of the written page. Another important aspect was the featuring of an ochre reddish brown colour, one often semantically associated with older books due to the wearing of their leather colours, which the palette generator graciously provided. The shade of English violet provided by the generator was then used on the site's banner as there were some issues with the legibility of the text situated atop the background image. By placing the text atop a card of a complimentary colour to the brown it ensured that the text would immediately grab the user's attention. The final colour of Engineering Orange goes unused in the current site's iteration to keep the colour scheme muted, but they complement the ambit well and could easily be integrated in the future.
 
 ![image](https://github.com/BrandonPCollins/project-5-bookshop/assets/131177569/8f4f872f-ecfd-43c9-8fce-6cde6ec57a79)
+
 
 ## Agile Development Approach
 
@@ -135,19 +141,6 @@ A key aspect of Agile development is the continuous feedback loop, which allows 
 ### Dynamic Adaptability and Continuous Improvement
 
 Agile methodologies emphasize adaptability and responsiveness to change, allowing the development to adjust its approach based on evolving requirements and feedback. As such, the development process for Brandon's Bookshop was characterized by dynamic adaptability and continuous improvement. The development process remained flexible and open to change, making adjustments as needed to accommodate shifting priorities, emerging challenges, and new opportunities. By continuously refining and enhancing the product, the team was able to deliver a solution that effectively addressed user needs and delivered value to stakeholders.
-
-## Custom Models
-In concordance with the marking criteria, Brandon's Bookshop features several custom models completely distinct from those showcased within
-
-### Rating System
-
-### Admin Blogs
-
-### Comment System & Like Functionality
-
-Full CRUD functionality is implemented in the comment system for users. Create/ Read/ Update/ Delete
-
-### Newsletters
 
 ---
 
