@@ -61,7 +61,7 @@ Products are categorized for easy navigation and search. This feature enhances t
 
 Admins can create and manage blog posts, providing a platform for sharing news, updates, and interesting content with the user community.
 
-### Comment Functionality
+### Comment and Reply Functionality
 
 All users can comment on blog posts made by admins, and reply to other users comments, facilitating conversation and discussion. The comments were created with full CRUD functionality in mind from the user's point of view, allowing them to create their comments, read other user's comments, update their comments and delete them.
 
@@ -72,6 +72,8 @@ In addition to the ability to comment on posts and reply to other user's comment
 ### Rating System
 
 Users have the ability to rate products using an integrated and dynamically visual star-rating system.
+
+![image](https://github.com/BrandonPCollins/project-5-bookshop/assets/131177569/9fb6c98b-6f54-4c00-93a0-0b58c1307c3e)
 
 ### Newsletters
 
@@ -105,12 +107,11 @@ Brandon's Bookshop features a custom favicon for brand recognition and visual id
 
 The structure of the site followed the basic use of a base.html file and the inclusion of the navbar at the top of each page and the footer at the bottom to provide consistency across the user experience. Sandwiched between the navbar and the footer on each page was the content of the page itself, be it the product list, product details, the blog page or the FAQ section. This repeated layout provides the user with familiarity upon visiting each page. The only exception to the rule was the landing page which is slightly different due to the various calls-to-actions featured including the banner and the featured product carousel.
 
-All Wireframes were created using wireframe.cc
+All Wireframes were created using wireframe.cc The wireframe presented here for the Product List page is broadly representative of all other pages featured on the site.
 
 ![image](https://github.com/BrandonPCollins/project-5-bookshop/assets/131177569/9150e750-3cd3-453d-8365-969730dd5a9d)
 
 ![image](https://github.com/BrandonPCollins/project-5-bookshop/assets/131177569/1482d143-e52f-427c-a57c-f30f7dbf000f)
-
 
 
 ### Colour Palette  
