@@ -233,11 +233,15 @@ Testing was accomplished manually via continuous and determined experimentation 
 
 ### W3C Validator 
 
+HTML was tested with the W3C Markup Validation Service and I fixed the errors which it returned.
+
 ![image](https://github.com/BrandonPCollins/project-5-bookshop/assets/131177569/59c4fa61-11e1-4e9c-82d3-c75ae6fb18a2)
 
 ![image](https://github.com/BrandonPCollins/project-5-bookshop/assets/131177569/a104055c-b278-405d-8ed0-fcad2d92a7d9)
 
 ### CSS
+
+CSS was tested using the W3C CSS Validation Service - Jigsaw and returned no errors.
 
 ![image](https://github.com/BrandonPCollins/project-5-bookshop/assets/131177569/14bee55c-3d2d-42c8-beb3-31c4f267ee65)
 
@@ -249,13 +253,13 @@ Using https://pep8ci.herokuapp.com/ brought to my attention various formatting i
 
 ### Javascript 
 
-https://jshint.com/
+Javascript was tested manually using the console to view the logs when the script was run, and also using https://jshint.com/. All script on the site is functional and fit for purpose.
 
 ![image](https://github.com/BrandonPCollins/project-5-bookshop/assets/131177569/b450c495-95c1-46e6-8eec-1109358defb9)
 
 ### Lighthouse
 
-Changed the body image from a .jpg to a .webp per lighthouse's suggest for superior image compression and thus improve performance.
+Changed the body image from a .jpg to a .webp per Lighthouse's suggestion for superior image compression and thus improved performance. My main issue with Lighthouse is the performance which takes a hit on the products page due to the number of uncompressed images. I'm not entirely sure how to combat this at this current stage in my coding journey.
 
 ![image](https://github.com/BrandonPCollins/project-5-bookshop/assets/131177569/c5555629-e3e4-491a-82c1-2c8daf34204b)
 
