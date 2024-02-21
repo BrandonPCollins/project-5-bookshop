@@ -110,9 +110,27 @@ Used coolors.co to generate a colour palette for the site. It was important for 
 
 ## Agile Development Approach
 
-[Kanban Project Board](https://github.com/users/BrandonPCollins/projects/5)
+Throughout the development process of Brandon's Bookshop, an Agile Development approach was adopted to ensure flexibility, collaboration, and iterative improvement. Agile methodologies were employed to manage tasks, track progress, and adapt to evolving requirements effectively.
 
-Issues divided into [milestones](https://github.com/BrandonPCollins/project-5-bookshop/milestones)
+### Kanban Project Board
+
+A Kanban Project Board was utilized as a central tool for managing the project's development. This board provided a visual representation of tasks, allowing the tracking of the project's status and progress. The board was organized into different columns representing various stages of development, including "To Do," "In Progress," and "Completed." By using this board, I could easily prioritize tasks, allocate resources efficiently, and monitor the overall progress of the project.
+
+- [Kanban Project Board](https://github.com/users/BrandonPCollins/projects/5)
+
+### Milestones
+
+To facilitate better organization and tracking of the project's progress, milestones were established to mark significant achievements or phases in the development lifecycle. These milestones served as checkpoints for the team, helping to ensure that key objectives were met within specified timelines. Each milestone was associated with specific goals and deliverables and composed of the various User Stories, providing clear direction and focus for the development efforts.
+
+- [Milestones](https://github.com/BrandonPCollins/project-5-bookshop/milestones)
+
+### Continuous Feedback and Iteration
+
+A key aspect of Agile development is the continuous feedback loop, which allows for ongoing refinement and improvement of the product. Continuous testing and feedback from mentors, our cohort leader and fellow students was used to identify areas for improvement, address issues, and make necessary adjustments to meet user needs and contribute to creating new User Stories. 
+
+### Dynamic Adaptability and Continuous Improvement
+
+Agile methodologies emphasize adaptability and responsiveness to change, allowing the development to adjust its approach based on evolving requirements and feedback. As such, the development process for Brandon's Bookshop was characterized by dynamic adaptability and continuous improvement. The development process remained flexible and open to change, making adjustments as needed to accommodate shifting priorities, emerging challenges, and new opportunities. By continuously refining and enhancing the product, the team was able to deliver a solution that effectively addressed user needs and delivered value to stakeholders.
 
 ## Custom Models
 In concordance with the marking criteria, Brandon's Bookshop features several custom models completely distinct from those showcased within
