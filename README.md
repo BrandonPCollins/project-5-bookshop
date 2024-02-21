@@ -75,7 +75,7 @@ Products are categorized for easy navigation and search. This feature enhances t
 
 ### Blog Post Creation and Management
 
-Admins can create and manage blog posts from the site itself rather than having to enter the Django admin, providing a platform for sharing news, updates, and interesting content with the user community. These blog posts were designed with full CRUD functionality.
+Admins can create and manage blog posts from the site itself rather than having to enter the Django admin, providing a platform for sharing news, updates, and interesting content with the user community. These blog posts were designed with full CRUD functionality, thus allowing the admin to create new posts, read other existing posts, update older posts and delete ones that are no longer necessary. By moving this full functionality from the admin to an integrated series of pages it creates a seamless blogging experience for the site admin.
 
 ### Comment and Reply Functionality
 
@@ -293,6 +293,8 @@ The responsivity of the site was tested using manual screen resizing, viewing th
 * A way for customers to submit testimonials for display on the carousel at the bottom of the index page and thus allowing them to appear dynamically? {% for testimonial in testimonials %}
 
 * A model for customers to submit their own rare books for appraisal that the site can then offer to either purchase the book from the customer or offer a quote on a restoration service.
+
+* Pagination will be required as the site continues to grow, on both the product and blog listing pages.
 
 ---
 
