@@ -56,7 +56,11 @@ Embedded via an includes template onto the head of every page is a responsive Na
 
 ### Product Categorisation 
 
+Products are categorized for easy navigation and search. This feature enhances the user experience by allowing users to quickly find the books they are interested in.
+
 ### Blog Post Creation and Management
+
+Admins can create and manage blog posts, providing a platform for sharing news, updates, and interesting content with the user community.
 
 ### Comment Functionality
 
@@ -84,7 +88,7 @@ To increase the trustworthiness of our site and thus elevate it within the SEO s
 
 ### About and FAQ Page
 
-Further increase the site's SEO standings.
+The About and FAQ pages provide additional information about the bookstore and answer common questions. These pages not only enhance the user experience but also contribute to the site's SEO standings.
 
 ![image](https://github.com/BrandonPCollins/project-5-bookshop/assets/131177569/f71a1700-8cfa-4f14-9972-a11f384d25aa)
 
@@ -104,7 +108,7 @@ Wireframes created using wireframe.cc
 
 ### Colour Palette  
 
-Used coolors.co to generate a colour palette for the site. It was important for me to have a clean black and white as the base for the site's colour schematic, bestowing the site a clean, professional look while calling to mind the simplicity of the written page. Another important aspect was the featuring of an ochre reddish brown colour, one often semantically associated with older books due to the wearing of their leather colours, which the palette generator graciously provided. The other two supplementary colours go unused in the current site's iteration to keep the colour scheme muted, but they complement the ambit well and could easily be integrated in the future.
+Used coolors.co to generate a colour palette for the site. It was important for me to have a clean black and white as the base for the site's colour schematic, bestowing the site a clean, professional look while calling to mind the simplicity of the written page. Another important aspect was the featuring of an ochre reddish brown colour, one often semantically associated with older books due to the wearing of their leather colours, which the palette generator graciously provided. The shade of English violet provided by the generator was then used on the site's banner as there were some issues with the legibility of the text situated atop the background image. By placing the text atop a card of a complimentary colour to the brown it ensured that the text would immediately grab the user's attention. The final colour of Engineering Orange goes unused in the current site's iteration to keep the colour scheme muted, but they complement the ambit well and could easily be integrated in the future.
 
 ![image](https://github.com/BrandonPCollins/project-5-bookshop/assets/131177569/8f4f872f-ecfd-43c9-8fce-6cde6ec57a79)
 
