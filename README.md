@@ -297,6 +297,8 @@ The responsivity of the site was tested using manual screen resizing, viewing th
 ---
 
 ## Bugs
+
+* There are currently no outstanding bugs that the developers are aware of.
 ---
 
 ## Credits
