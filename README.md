@@ -266,6 +266,8 @@ Changed the body image from a .jpg to a .webp per Lighthouse's suggestion for su
 
 ### Responsivity
 
+The responsivity of the site was tested using manual screen resizing, viewing the site in various browsers and devices, and through the use of the Responsive Viewer Google Chrome Extension.
+
 ---
 
 ## Future Features
