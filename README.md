@@ -38,6 +38,7 @@
    - [Heroku Deployment](#heroku-deployment)
    - [Forking](#forking)
 4. [Testing](#testing)
+   - [Manual Testing]{#manual-testing)
    - [W3C Validator](#w3c-validator)
    - [CSS](#css)
    - [Python](#python)
@@ -244,6 +245,42 @@ This deployment process ensures a smooth transition from local development to a 
 
 Testing was accomplished manually via continuous and determined experimentation of functionality on both Desktop and Mobile Phone.
 
+### Manual Testing
+
+The site was tested by using various web browsers including Google Chrome, Edge, and Firefox. Likewise, the site was viewed on various devices such as desktops, laptops, smartphones and tablets.
+In order to confirm the successful implementation of the User Stories manual testing was accomplished.
+
+### User Stories Testing
+
+i) 
+
+ii) 
+
+iii) 
+
+iv) 
+
+v) 
+
+vi) 
+
+vii)
+
+viii)
+
+ix) 
+
+x) 
+
+xi) 
+
+xii) 
+
+xii) 
+
+xiv) 
+
+xv) 
 
 ### W3C Validator 
 
