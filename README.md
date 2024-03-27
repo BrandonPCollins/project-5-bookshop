@@ -294,29 +294,31 @@ xix) As a shopper I can feel that my personal and payment information is safe an
 
 xx) As a shopper I can view an order confirmation after checkout so that I can verify that I haven't made any mistakes
 
-xxi)
+xxi) As a shopper I can receive an email confirmation after checking out so that I can keep the confirmation fo what I've purchased for my own records
 
-xxii)
+xxii) As a store owner I can add a product so that add new items to my store
 
-xxiii)
+xxiii) As a store owner I can edit and update products so that change product prices, descriptions, images and other information relevant to the product
 
-xxiv)
+xxiv) As a store owner I can delete a product so that I can delete products that are no longer for sale
 
-xxv)
+xxv) As a store owner I can display select products on a carousel on the home page so that I can display products I am looking to showcase or those which are more likely to sell to users immediately
 
-xxvi)
+xxvi) As a user I can access an FAQ page so that I can have my common and pressing questions answered and addressed
 
-xxvii)
+xxvii) As a store owner I can create blog posts to display on the website so that I can create unique posts to inform users of special events, deals or news pertaining to the store.
 
-xxviii)
+xxviii) As a store owner I can display user testimonials on the main page so that Google's SEO will view the site as more trustworthy while informing new users that we are a reliable and responsible service.
 
-xxix)
+xxix) As a authenticated user I can comment on the store owner's blog post so that I can express my opinion on the matters being discussed within the post, having my voice heard.
 
-xxx)
+xxx) As an authenticated user I can like comments left by other users on the admin team's blog posts so that I can express my agreement with the sentiment expressed within the comment
 
-xxxi)
+xxxi) As a user I can sign up to a newsletter so that I can receive updates pertaining to the site
 
-xxxii)
+xxxii) As an autheticated user I can reply to comments left by other users so that I can discuss topics and subjects with them.
+
+xxxiii) As a user I can add rate a product out of 5 stars so that I can inform other users of the quality of that product
 
 ### W3C Validator 
 
