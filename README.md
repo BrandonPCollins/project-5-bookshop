@@ -250,47 +250,49 @@ Testing was accomplished manually via continuous and determined experimentation 
 The site was tested by using various web browsers including Google Chrome, Edge, and Firefox. Likewise, the site was viewed on various devices such as desktops, laptops, smartphones and tablets.
 In order to confirm the successful implementation of the User Stories manual testing was accomplished.
 
+Organised into milestones etc. etc.
+
 ### User Stories Testing
 
-i)
+i) As a shopper I can view a list of products so that select some to purchase
 
-ii)
+ii) As a shopper I can view individual product details so that identify the price, description, product rating and product image.
 
-iii)
+iii) As a shopper I can easily view the total of my purchases at any time so that avoid spending too much
 
-iv)
+iv) As a shopper I can be presented with featured books so that I can take advantage of offers or limited time pieces with the store's collection
 
-v)
+v) As a site user I can easily register for an account so that I can have a personal account and be able to view my profile
 
-vi)
+vi) As a site user I can easily login and logout of the site so that I can access my personal account information and then logout when I have completed my business on the site
 
-vii)
+vii) As a site user I can easily recover a lost password so that I can recover access to my personal account
 
-viii)
+viii) As a site user I can receive a confirmation email after registering so that I can verify that my account registration was successful.
 
-ix)
+ix) As a site user I can have a personalised user profile so that view my personal order history and order confirmations, and save my payment and checkout information so I am not required to re-enter my details upon every purchase
 
-x)
+x) As a shopper I can sort the list of available products so that easily identify the best rated, best price, and categorically sorted products
 
-xi)
+xi) As a shopper I can sort a specific category of product so that find the best-rated or best-priced product within a specific category or sort the products within that category name
 
-xii)
+xii) As a shopper I can search for a product by name of description so that find a specific product that I would like to purchase
 
-xiii)
+xiii) As a shopper I can sort multiple categories of product simultaneously so that find the best-priced or best rated products across broad or narrow categories, allowing me to refine m search as a desire
 
-xiv)
+xiv) As a shopper I can easily see what I've searched for and the number of results so that quickly decide whether the product I want is available.
 
-xv)
+xv) As a shopper I can easily select the quantity of a product while selecting it so that I can easily buy multiple of a product if I desire
 
-xvi)
+xvi) As a shopper I can view the items in my bag to be purchased so that I can identify the total cost of my purchase and inventory all the items I will be receiving.
 
-xvii)
+xvii) As a shopper I can adjust the quantity of individual items in my bag so that I can easily make changes to the number of items I am purchasing in my cart before committing to the purchase.
 
-xviii)
+xviii) As a shopper I can easily enter my payment information so that check out quickly and efficiently with minimal barriers
 
-xix)
+xix) As a shopper I can feel that my personal and payment information is safe and secure so that I can confidently provide the needed information to make a purchase
 
-xx)
+xx) As a shopper I can view an order confirmation after checkout so that I can verify that I haven't made any mistakes
 
 xxi)
 
