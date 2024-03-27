@@ -252,35 +252,69 @@ In order to confirm the successful implementation of the User Stories manual tes
 
 ### User Stories Testing
 
-i) 
+i)
 
-ii) 
+ii)
 
-iii) 
+iii)
 
-iv) 
+iv)
 
-v) 
+v)
 
-vi) 
+vi)
 
 vii)
 
 viii)
 
-ix) 
+ix)
 
-x) 
+x)
 
-xi) 
+xi)
 
-xii) 
+xii)
 
-xii) 
+xiii)
 
-xiv) 
+xiv)
 
-xv) 
+xv)
+
+xvi)
+
+xvii)
+
+xviii)
+
+xix)
+
+xx)
+
+xxi)
+
+xxii)
+
+xxiii)
+
+xxiv)
+
+xxv)
+
+xxvi)
+
+xxvii)
+
+xxviii)
+
+xxix)
+
+xxx)
+
+xxxi)
+
+xxxii)
 
 ### W3C Validator 
 
