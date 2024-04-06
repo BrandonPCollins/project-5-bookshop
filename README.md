@@ -291,30 +291,30 @@ xii) As a shopper I can search for a product by name or description so that find
    * Confirmed via use of the intuitive product search bar which appears atop each webpage and ensuring that relevent results are displayed, allowing shoppers to effortlessly locate desired products by entering relevant names or descriptions.
 
 xiii) As a shopper I can sort multiple categories of products simultaneously so that find the best-priced or best-rated products across broad or narrow categories, allowing me to refine my search as a desire
-   * Confirmed via 
+   * Confirmed via comprehensive sorting options enabling shoppers to simultaneously sort multiple categories of products from the product list view page, empowering shoppers them to efficiently pinpoint the best-priced or best-rated products across various categories based on their preferences. 
 
 xiv) As a shopper I can easily see what I've searched for and the number of results so that quickly decide whether the product I want is available.
    * Confirmed via
 
 xv) As a shopper I can easily select the quantity of a product while selecting it so that I can easily buy multiple of a product if I desire
-   * Confirmed via
+   * Confirmed via the implementation of user-friendly search result displays providing clear visibility of searched keywords along with the corresponding number of results following the usage of the site-wide search bar, facilitating swift decision-making regarding the availability of desired products.
 
 xvi) As a shopper I can view the items in my bag to be purchased so that I can identify the total cost of my purchase and inventory all the items I will be receiving.
-   * Confirmed via
+   * Confirmed via clicking the top right bag icon on the page once items have been added to the cart and confirming that the preview accurately reflects what the shopper has added to their cart, allowing shoppers to effortlessly review the list of items to be purchased, ascertain the total cost of the purchase, and inventory all the items to be received.
 
 xvii) As a shopper I can adjust the quantity of individual items in my bag so that I can easily make changes to the number of items I am purchasing in my cart before committing to the purchase.
-   * Confirmed via
+   * Confirmed via adding items to the bag and confirming the intuitive "+" and "-" buttons, operating as plus and minus quantity controls respectively, enables the shoppers to conveniently adjust the number of individual items within the shopping bag, facilitating easy modifications to the number of items to be purchased before finalising their purchase.
 
 xviii) As a shopper I can easily enter my payment information so that check out quickly and efficiently with minimal barriers
-   * Confirmed via
+   * Confirmed via inputting payment information on the entry process on the checkout page and ensuring it is then correctly saved to the user's easily accessible profile page, ensuring smooth and efficient checkout experiences with minimal barriers for repeat and first-time shoppers.
 
 xix) As a shopper I can feel that my personal and payment information is safe and secure so that I can confidently provide the needed information to make a purchase
-   * Confirmed via
+   * Confirmed via implementation of robust security measures via the installation of various reliable django packages such as all-auth, and using various security checks and measures, instilling confidence in shoppers regarding the safety and security of their personal and payment information.
 
 xx) As a shopper I can view an order confirmation after checkout so that I can verify that I haven't made any mistakes
-   * Confirmed via
+   * Confirmed via creating a mock order on the admin account and confirming that there is a prompt display of an order confirmation page following the checkout process, enabling shoppers to verify the accuracy of their orders and ensure that no mistakes were made during the checkout process.
 
-xxi) As a shopper I can receive an email confirmation after checking out so that I can keep the confirmation fo what I've purchased for my own records
+xxi) As a shopper I can receive an email confirmation after checking out so that I can keep the confirmation of what I've purchased for my own records
    * Confirmed via
 
 xxii) As a store owner I can add a product so that add new items to my store
