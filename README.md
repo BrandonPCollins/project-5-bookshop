@@ -255,43 +255,43 @@ Organised into milestones etc. etc.
 ### User Stories Testing
 
 i) As a shopper I can view a list of products so that select some to purchase
-   * Confirmed via
+   * Confirmed via thoroughly navigating the site's product pages across various browsers and screens to ensure that the products were prominently displayed and easily accessible.
 
 ii) As a shopper I can view individual product details so that identify the price, description, product rating and product image.
-   * Confirmed via
+   * Confirmed via actively clicking on individual products, ensuring that the product view functioned seamlessly and exhibited all pertinent information crucial for customer decision-making.
 
 iii) As a shopper I can easily view the total of my purchases at any time so that avoid spending too much
-   * Confirmed via
+   * Confirmed via adding products to the cart and checking that the shopping cart and bag totals are displaying and totalling correctly on their respective pages.
 
-iv) As a shopper I can be presented with featured books so that I can take advantage of offers or limited time pieces with the store's collection
-   * Confirmed via
+iv) As a shopper I can be presented with featured books so that I can take advantage of offers or limited time pieces within the store's collection
+   * Confirmed via engagement with the home page, specifically noting the presence of prominently displayed featured books within the prominently featured rotating carousel.
 
 v) As a site user I can easily register for an account so that I can have a personal account and be able to view my profile
-   * Confirmed via
+   * Confirmed via navigating to the registration page and successful completion of the registration process to establish a personal account.
 
 vi) As a site user I can easily login and logout of the site so that I can access my personal account information and then logout when I have completed my business on the site
-   * Confirmed via
+   * Confirmed via utilising login and logout procedures by clicking them via the drop-down menu which is accessed by clicking the "My Account" icon in the top-right corner of the screen. Then ensuring easy access to personal account information and seamless logout functionality upon completion of activities on the site.
 
 vii) As a site user I can easily recover a lost password so that I can recover access to my personal account
-   * Confirmed via
+   * Confirmed via simple execution of the password recovery feature from the login page, successfully receiving instructions to reset the password in case of a forgotten password.
 
 viii) As a site user I can receive a confirmation email after registering so that I can verify that my account registration was successful.
-   * Confirmed via
+   * Confirmed via the near immediate receipt of a confirmation email following the registration process, providing assurance that the account registration was completed successfully.
 
 ix) As a site user I can have a personalised user profile so that view my personal order history and order confirmations, and save my payment and checkout information so I am not required to re-enter my details upon every purchase
-   * Confirmed via
+   * Confirmed via accessing the comprehensive user profile from the My Account dropdown menu in the top right of the screen once logged in. This page facilitates the seamless viewing of personal order history, order confirmations, and the convenient saving of payment and checkout information for an enhanced shopping experience allowing the shopper to checkout quicker.
 
 x) As a shopper I can sort the list of available products so that easily identify the best rated, best price, and categorically sorted products
-   * Confirmed via
+   * Confirmed via efficient sorting of the available products using the available categories which are easily accessed from the Categories drop down menu on the site's main navbar, enabling quick identification of products based on various criteria such as ratings and prices from the product list view.
 
 xi) As a shopper I can sort a specific category of product so that find the best-rated or best-priced product within a specific category or sort the products within that category name
-   * Confirmed via
+   * Confirmed via accessing an individual category page from the site's main navbar and then using the precise sorting to further parse and narrow the categories items, facilitating the streamlined discovery of the best-rated or best-priced products within each individual category.
 
-xii) As a shopper I can search for a product by name of description so that find a specific product that I would like to purchase
-   * Confirmed via
+xii) As a shopper I can search for a product by name or description so that find a specific product that I would like to purchase
+   * Confirmed via use of the intuitive product search bar which appears atop each webpage and ensuring that relevent results are displayed, allowing shoppers to effortlessly locate desired products by entering relevant names or descriptions.
 
-xiii) As a shopper I can sort multiple categories of product simultaneously so that find the best-priced or best rated products across broad or narrow categories, allowing me to refine m search as a desire
-   * Confirmed via
+xiii) As a shopper I can sort multiple categories of products simultaneously so that find the best-priced or best-rated products across broad or narrow categories, allowing me to refine my search as a desire
+   * Confirmed via 
 
 xiv) As a shopper I can easily see what I've searched for and the number of results so that quickly decide whether the product I want is available.
    * Confirmed via
