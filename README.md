@@ -291,13 +291,13 @@ xii) As a shopper I can search for a product by name or description so that find
    * Confirmed via use of the intuitive product search bar which appears atop each webpage and ensuring that relevent results are displayed, allowing shoppers to effortlessly locate desired products by entering relevant names or descriptions.
 
 xiii) As a shopper I can sort multiple categories of products simultaneously so that find the best-priced or best-rated products across broad or narrow categories, allowing me to refine my search as a desire
-   * Confirmed via comprehensive sorting options enabling shoppers to simultaneously sort multiple categories of products from the product list view page, empowering shoppers them to efficiently pinpoint the best-priced or best-rated products across various categories based on their preferences. 
+   * Confirmed via testing the comprehensive sorting options enabling shoppers to simultaneously sort multiple categories of products from the product list view page, empowering shoppers them to efficiently pinpoint the best-priced or best-rated products across various categories based on their preferences. 
 
 xiv) As a shopper I can easily see what I've searched for and the number of results so that quickly decide whether the product I want is available.
-   * Confirmed via
+   * Confirmed via the using the search bar and confirming the implementation of user-friendly search result displays providing clear visibility of searched keywords along with the corresponding number of results following the usage of the site-wide search bar, facilitating swift decision-making regarding the availability of desired products.
 
 xv) As a shopper I can easily select the quantity of a product while selecting it so that I can easily buy multiple of a product if I desire
-   * Confirmed via the implementation of user-friendly search result displays providing clear visibility of searched keywords along with the corresponding number of results following the usage of the site-wide search bar, facilitating swift decision-making regarding the availability of desired products.
+   * Confirmed via going to any individual product's information page and making use of the intuitive quantity bar displayed above the "Add to Bag" button, and ensuring that the corresponding number of products are correctly added to the users cart so that shoppers 
 
 xvi) As a shopper I can view the items in my bag to be purchased so that I can identify the total cost of my purchase and inventory all the items I will be receiving.
    * Confirmed via clicking the top right bag icon on the page once items have been added to the cart and confirming that the preview accurately reflects what the shopper has added to their cart, allowing shoppers to effortlessly review the list of items to be purchased, ascertain the total cost of the purchase, and inventory all the items to be received.
@@ -314,44 +314,41 @@ xix) As a shopper I can feel that my personal and payment information is safe an
 xx) As a shopper I can view an order confirmation after checkout so that I can verify that I haven't made any mistakes
    * Confirmed via creating a mock order on the admin account and confirming that there is a prompt display of an order confirmation page following the checkout process, enabling shoppers to verify the accuracy of their orders and ensure that no mistakes were made during the checkout process.
 
-xxi) As a shopper I can receive an email confirmation after checking out so that I can keep the confirmation of what I've purchased for my own records
-   * Confirmed via
+xxi) As a store owner I can add a product so that add new items to my store
+   * Confirmed via logging into the site using a superuser account and accessing the Product Management page from the account drop-down menu. Then filling out the information and ensuring the newly added product appears appropriately on all relevant pages, including the categories and store listings, thus enabling store owners to seamlessly expand their product offerings.
 
-xxii) As a store owner I can add a product so that add new items to my store
-   * Confirmed via
+xxii) As a store owner I can edit and update products so that change product prices, descriptions, images and other information relevant to the product
+   * Confirmed via going to the product list page as a verified superuser and using the Edit function to access the product editing page. Then once a product has been updated, vising the product's information page to ensure all altered information has been altered to their new values. 
 
-xxiii) As a store owner I can edit and update products so that change product prices, descriptions, images and other information relevant to the product
-   * Confirmed via
+xxiii) As a store owner I can delete a product so that I can delete products that are no longer for sale
+   * Confirmed via going to the product list page as a verified superuser and using the Delete function, and then once having confirmed the product deletion ensuring the product no longer displays on the various pages across the site.
 
-xxiv) As a store owner I can delete a product so that I can delete products that are no longer for sale
-   * Confirmed via
+xxiv) As a store owner I can display select products on a carousel on the home page so that I can display products I am looking to showcase or those which are more likely to sell to users immediately
+   * Confirmed via the use of the "Featured" attribute on various products, which causes them to be displayed upon the front page carousel. This attribute can be added to a product during its creation phase from either the backend admin panel or from the on-site product creation page. It can also be added post-creation to a product from the product update page, accessed as described above. Once added this is easily verified by going to the front page and visually confirming the prescence of the chosen product upon the featured carousel.
 
-xxv) As a store owner I can display select products on a carousel on the home page so that I can display products I am looking to showcase or those which are more likely to sell to users immediately
-   * Confirmed via
+xxv) As a user I can access an FAQ page so that I can have my common and pressing questions answered and addressed
+   * Confirmed via accessing the FAQ page from the site's Navbar and verifying it contains various answers to several frequently asked questions that a shopper may have.
 
-xxvi) As a user I can access an FAQ page so that I can have my common and pressing questions answered and addressed
-   * Confirmed via
+xxvi) As a store owner I can create blog posts to display on the website so that I can create unique posts to inform users of special events, deals or news pertaining to the store.
+   * Confirmed via accessing the Create Blog Post page from the My Account dropdown menu when logged in as a superuser and then inputting relevant text and information into the text boxes to create a new Blog Post. Then confirming that the newly created blog post appears as intended on the blog post display page, accessed through the BLOG header on the site's main navbar. 
 
-xxvii) As a store owner I can create blog posts to display on the website so that I can create unique posts to inform users of special events, deals or news pertaining to the store.
-   * Confirmed via
+xxvii) As a store owner I can display user testimonials on the main page so that Google's SEO will view the site as more trustworthy while informing new users that we are a reliable and responsible service.
+   * Confirmed via navigating to the main page of the webpage and scrolling to the bottom to confirm the presence of the user testimonial carousel. 
 
-xxviii) As a store owner I can display user testimonials on the main page so that Google's SEO will view the site as more trustworthy while informing new users that we are a reliable and responsible service.
-   * Confirmed via
+xxviii) As an authenticated user I can comment on the store owner's blog post so that I can express my opinion on the matters being discussed within the post, having my voice heard.
+   * Confirmed via using a previously created account to comment on any of the blog posts, accessed via the blog list view by clicking on the individual blog and navigating to the blog view. Then by using the text box at the bottom of the page leaving a comment and ensuring it appears as appropriate once the page has been refreshed.
 
-xxix) As an authenticated user I can comment on the store owner's blog post so that I can express my opinion on the matters being discussed within the post, having my voice heard.
-   * Confirmed via
+xxix) As an authenticated user I can like comments left by other users on the admin team's blog posts so that I can express my agreement with the sentiment expressed within the comment
+   * Confirmed via returning to the comment left in the previous manual test on the Blog Post's page as an alternate account, and using the Like widget button to "like" the comment. Then leaving and returning to the page to ensure the like has remained counted on the post.
 
-xxx) As an authenticated user I can like comments left by other users on the admin team's blog posts so that I can express my agreement with the sentiment expressed within the comment
-   * Confirmed via
+xxx) As a user I can sign up to a newsletter so that I can receive updates pertaining to the site
+   * Confirmed via using the navbar to navigate to the NEWSLETTER page and entering an email address to sign up for the newsletter. Then checking the email used to confirm that a confirmation email was sent. This can be further tested using the admin back-end to send out a newsletter and confirming the email used to sign up for the newsletter received it. 
 
-xxxi) As a user I can sign up to a newsletter so that I can receive updates pertaining to the site
-   * Confirmed via
+xxxi) As an autheticated user I can reply to comments left by other users so that I can discuss topics and subjects with them.
+   * Confirmed via going to any individual blog post view page which already contains comments (such as the blog page we used for previous manual testing), and scrolling to the comments section and using the reply text box and ensuring the new comment appears beneath the appropriate comment that it is replying to.
 
-xxxii) As an autheticated user I can reply to comments left by other users so that I can discuss topics and subjects with them.
-   * Confirmed via
-
-xxxiii) As a user I can add rate a product out of 5 stars so that I can inform other users of the quality of that product
-   * Confirmed via
+xxxii) As a user I can add rate a product out of 5 stars so that I can inform other users of the quality of that product
+   * Confirmed via visiting any given product information page and using the intuitive star rating widget to leave a rating on said product. The "Average Rating" of the product should then update accordingly to display the newly calculated rating on that product. 
 
 ### W3C Validator 
 
